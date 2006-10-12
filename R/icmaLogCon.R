@@ -1,5 +1,5 @@
 "icmaLogCon" <-
-function (x, w = NA, eps = 10^-8, T1 = 2000, robust = TRUE, print = FALSE) 
+function (x, w = NA, eps = 10^-8, T1 = 2000, robustif = TRUE, print = FALSE) 
 {
     n <- length(x)
     if (sum(x[2:n] <= x[1:n - 1]) > 0) {
@@ -28,7 +28,7 @@ function (x, w = NA, eps = 10^-8, T1 = 2000, robust = TRUE, print = FALSE)
         y <- eta + grad/hess
         etanew[1] <- y[1]
         etanew[2:n] <- -isoMean(-y[2:n], hess[2:n])
-        if (robust == TRUE) {
+        if (robustif == TRUE) {
             etanew <- robust(x, w, eta, etanew, grad)
         }
         dirder <- as.numeric(t(grad) %*% (etanew - eta))

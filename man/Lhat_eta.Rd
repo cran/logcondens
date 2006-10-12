@@ -6,7 +6,7 @@
   
   \deqn{L(\varphi) = \sum_{i=1}^m w_i \varphi(x_i) - \int_{x_1}^{x_m} \exp(\varphi(t)) dt}
   
-  where \eqn{L} is parametrized via 
+  where \eqn{\varphi} is parametrized via 
   
   \deqn{\eta(\varphi) = \Bigl(\varphi_1, \Bigl(\eta_1 + \sum_{j=2}^i (x_i-x_{i-1})\eta_i\Bigr)_{i=2}^m\Bigr).} 
 }

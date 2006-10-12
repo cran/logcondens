@@ -34,9 +34,9 @@ function (x, w = NA, phi_o = NA, prec = 10^(-7), print = FALSE)
             phi_new <- 0.5 * (phi + phi_new)
             L_new <- Local_LL(x, ww, phi_new)
             dirderiv <- 0.5 * dirderiv
-            if (print == 1) {
+            if (print == TRUE) {
                 print(paste("iter0=", iter0, " / iter1=", iter1, 
-                  " / L=", round(L, 4), " / dirderiv=", round(dirderiv, 
+                  " / L=", round(L_new, 4), " / dirderiv=", round(dirderiv, 
                     4), sep = ""))
             }
         }

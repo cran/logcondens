@@ -1,4 +1,13 @@
-logcondens_1.0 (inital version):
---------------------------------
-- Provide functions to estimate a
-  log-concave probability density
+logcondens_1.1:
+---------------------------------
+- Specified affiliations.
+- Indicated that MatLab files are available upon request from Lutz Duembgen.
+- MLE: printed only L, but needs to print L_new; and print = 1 replaced by print = TRUE.
+- icmaLogCon: replaced ambiguous option "robust" by "robustif" (there is already a function called "robust")
+- LocalMLE: replaced explicit calculations by function call to LocalConvexity.
+- Help files: reformulated and complemented some entries.
+- Vignette: corrected some typos.
+
+logcondens_1.0 (initial version):
+---------------------------------
+- Provide functions to estimate a log-concave probability density.

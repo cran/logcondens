@@ -26,7 +26,7 @@ Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.stat.unibe.ch
 n <- 50
 x <- sort(runif(n, 0, 1))
 y <- x ^ 2 + rnorm(n, 0, 0.2)
-plot(seq(0, 1, by = 0.01), seq(0, 1, by = 0.01) ^ 2, col = 2, type = 'l'); rug(x)
+plot(seq(0, 1, by = 0.01), seq(0, 1, by = 0.01) ^ 2, col = 2, type = 'l', xlim = range(c(0, 1, x)), ylim = range(c(0, 1 , y))); rug(x)
 
 ## plot pava result
 lines(x, isoMean(y, rep(1 / n, n)), type = 's')

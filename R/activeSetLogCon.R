@@ -49,7 +49,7 @@ function (x, w = NA, print = FALSE)
             L <- res3$L
             conv_new <- res3$conv
             H <- res3$H
-            if (print == 1) {
+            if (print == TRUE) {
                 print(paste("iter1=", iter1, " / L=", round(L, 
                   4), " / max(H)=", round(max(H), 4), sep = ""))
             }

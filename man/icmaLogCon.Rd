@@ -14,15 +14,15 @@ computes iteratively a concave, piecewise linear function \eqn{\widehat \varphi_
   \deqn{\eta(\varphi) = \Bigl(\varphi_1, \Bigl(\eta_1 + \sum_{j=2}^i (x_i-x_{i-1})\eta_i\Bigr)_{i=2}^m \Bigr).} 
   
   To find the maximum of \eqn{L}, a variant of the iterative convex minorant using the pool - adjacent - violaters algorithm is used.}
-\usage{icmaLogCon(x, w = NA, eps = 10^-8, T1 = 2000, robust = TRUE, print = FALSE)}
+\usage{icmaLogCon(x, w = NA, eps = 10^-8, T1 = 2000, robustif = TRUE, print = FALSE)}
 \arguments{
   \item{x}{Vector of independent and identically distributed numbers, with strictly increasing entries.}
   \item{w}{Optional vector of nonnegative weights corresponding to \eqn{x}, where \eqn{w_1 > 0} and \eqn{w_m > 0}. These raw weights are 
             normalized in order to sum to one. Default: \eqn{w_i = 1 / m}.}
   \item{eps}{An arbitrary real number, typically small. Iterations are halted if the directional derivative of \eqn{\eta \to L(\eta)} in the direction of the new candidate is \eqn{\le \varepsilon}.}
   \item{T1}{Maximal number of iterations to perform.}
-  \item{robust}{robust = TRUE performs the robustification and Hermite interpolation procedure detailed in 
-                Rufibach (2006a, b), robust = FALSE does not. In the latter case, convergence of the algorithm
+  \item{robustif}{robustif = TRUE performs the robustification and Hermite interpolation procedure detailed in 
+                Rufibach (2006a, b), robustif = FALSE does not. In the latter case, convergence of the algorithm
                 is no longer guaranteed.}
   \item{print}{print = TRUE outputs log-likelihood in every loop, print = FALSE does not. Make sure to tell R to output (press CTRL+W).}
 }
@@ -55,7 +55,7 @@ Log concave density estimation via an Active Set Algorithm can be performed usin
 \examples{
 set.seed(1977)
 x <- sort(rgamma(200, 2, 1))
-res <- icmaLogCon(x, w = NA, T1 = 2000, robust = TRUE, print = TRUE)
+res <- icmaLogCon(x, w = NA, T1 = 2000, robustif = TRUE, print = TRUE)
 
 ## plot resulting functions
 par(mfrow = c(2, 1), mar = c(3, 2, 1, 2))

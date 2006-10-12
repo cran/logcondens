@@ -11,11 +11,7 @@ function (x, w, IsKnot, phi_o, prec)
     phi <- res2$phi
     L <- res2$L
     phi <- LocalExtend(x, IsKnot, x2, phi)
-    dx <- diff(x)
-    conv <- 1:n * 0
-    deriv <- diff(phi)/dx
-    conv[2:(n - 1)] <- diff(deriv)
-    conv <- conv * IsKnot
+    conv <- as.vector(LocalConvexity(x, phi)) * IsKnot
     F <- LocalF(x, phi)
     H <- 1:n * 0
     JJ <- (1:n) * IsKnot
