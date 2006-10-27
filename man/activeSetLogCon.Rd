@@ -67,15 +67,19 @@ res <- activeSetLogCon(x, w = NA, print = FALSE)
 par(mfrow = c(2, 2), mar = c(3, 2, 1, 2))
 plot(x, exp(res$phi), type = 'l'); rug(x)
 plot(x, res$phi, type = 'l'); rug(x)
-plot(x, res$F, type = 'l'); rug(x)
+plot(x, res$Fhat, type = 'l'); rug(x)
 plot(x, res$H, type = 'l'); rug(x)
 
-## compute function values at an arbitrary point
+## compute and plot function values at an arbitrary point
 x0 <- (x[100] + x[101]) / 2
-evaluateLogConDens(x0, x, exp(res$phi), res$F, res$IsKnot)
+Fx0 <- evaluateLogConDens(x0, x, res$phi, res$Fhat, res$IsKnot)[3]
+plot(x, res$Fhat, type = 'l'); rug(x)
+abline(v = x0, lty = 3); abline(h = Fx0, lty = 3)
 
-## compute 0.5 quantile of estimated F
-quantilesLogConDens(0.5, x, exp(res$phi), res$F, res$IsKnot)
+## compute and plot 0.9-quantile of Fhat\coprod
+q <- quantilesLogConDens(0.9, x, res$phi, res$Fhat)
+plot(x, res$Fhat, type = 'l'); rug(x)
+abline(h = 0.9, lty = 3); abline(v = q, lty = 3)
 }
 \keyword{htest}
 \keyword{nonparametric}

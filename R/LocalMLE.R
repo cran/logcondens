@@ -12,7 +12,7 @@ function (x, w, IsKnot, phi_o, prec)
     L <- res2$L
     phi <- LocalExtend(x, IsKnot, x2, phi)
     conv <- as.vector(LocalConvexity(x, phi)) * IsKnot
-    F <- LocalF(x, phi)
+    Fhat <- LocalF(x, phi)
     H <- 1:n * 0
     JJ <- (1:n) * IsKnot
     JJ <- JJ[JJ > 0]

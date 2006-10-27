@@ -64,7 +64,7 @@ function (x, w = NA, print = FALSE)
                 " / max(H)=", round(max(H), 4), sep = ""))
         }
     }
-    F <- LocalF(x, phi)
-    return(list(x = x, phi = phi, IsKnot = IsKnot, L = L, F = F, 
+    Fhat <- LocalF(x, phi)
+    return(list(x = x, phi = phi, IsKnot = IsKnot, L = L, Fhat = Fhat, 
         H = H))
 }

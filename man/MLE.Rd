@@ -21,7 +21,7 @@ is maximal over all continuous, piecewise linear functions with knots in \eqn{\{
 \value{
   \item{phi}{Resulting column vector \eqn{(\widehat \varphi_{MLE}(x_i))_{i=1}^m.}}
   \item{L}{Value \eqn{L(\widehat \varphi_{MLE})} of the log-likelihood at \eqn{\widehat \varphi_{MLE}.}}
-  \item{F}{Vector of the same length as \eqn{x} with entries \eqn{\widehat F_{MLE,1} = 0} and 
+  \item{Fhat}{Vector of the same length as \eqn{x} with entries \eqn{\widehat F_{MLE,1} = 0} and 
 
 \deqn{\widehat F_{MLE,k} = \sum_{j=1}^{k-1} (x_{j+1} - x_j) J(\varphi_j, \varphi_{j+1}) }
 

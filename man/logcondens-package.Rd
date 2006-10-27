@@ -2,7 +2,7 @@
 \alias{logcon-package}
 \alias{logcon}
 \docType{package}
-\title{Estimate a Log-Concave Probability Density from i.i.d. Observations}
+\title{Estimate a Log-Concave Probability Density from iid Observations}
 \description{Given a vector of observations \eqn{x = (x_1, \ldots, x_m)} with pairwise distinct entries and
 a vector of weights \eqn{w=(w_1, \ldots, w_m)} s.t. \eqn{\sum_{i=1}^m w_i = 1}, this package allows to compute a 
 concave, piecewise linear function \eqn{\widehat \varphi_m} on \eqn{[x_1, x_m]} with knots only in 
@@ -20,8 +20,8 @@ integrates to one. Two algorithms are offered: An active set and an iterative al
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 1.1\cr
-Date: \tab 2006-10-12\cr
+Version: \tab 1.2\cr
+Date: \tab 2006-10-27\cr
 License: \tab GPL version 2 or newer \cr
 }
 Use this package to estimate a log-concave density from i.i.d. observations. The package offers two algorithms which are implemented in the functions \code{\link{icmaLogCon}} and \code{\link{activeSetLogCon}}. Additionally, the value of the log-density, the density and the distribution function can be computed using \code{\link{evaluateLogConDens}}. To compute quantiles of the estimated distribution function use \code{\link{quantilesLogConDens}}.
@@ -67,15 +67,15 @@ res2$L
 par(mfrow = c(2, 2), mar = c(3, 2, 1, 2))
 plot(x, exp(res$phi), type = 'l'); rug(x)
 plot(x, res$phi, type = 'l'); rug(x)
-plot(x, res$F, type = 'l'); rug(x)
+plot(x, res$Fhat, type = 'l'); rug(x)
 plot(x, res$H, type = 'l'); rug(x)
 
 ## compute function values at an arbitrary point
 x0 <- (x[50] + x[51]) / 2
-evaluateLogConDens(x0, x, exp(res$phi), res$F, res$IsKnot)
+evaluateLogConDens(x0, x, res$phi, res$Fhat, res$IsKnot)
 
-## compute 0.5 quantile of estimated F
-quantilesLogConDens(0.5, x, exp(res$phi), res$F, res$IsKnot)
+## compute 0.5 quantile of Fhat
+quantilesLogConDens(0.5, x, res$phi, res$Fhat)
 }
 \keyword{htest}
 \keyword{nonparametric}

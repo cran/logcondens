@@ -64,6 +64,6 @@ function (x, w = NA, phi_o = NA, prec = 10^(-7), print = FALSE)
                   4), sep = ""))
         }
     }
-    return(list(phi = matrix(phi, ncol = 1), L = L, F = matrix(LocalF(x, 
+    return(list(phi = matrix(phi, ncol = 1), L = L, Fhat = matrix(LocalF(x, 
         phi), ncol = 1)))
 }

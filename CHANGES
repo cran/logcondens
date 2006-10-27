@@ -1,3 +1,10 @@
+logcondens_1.2:
+---------------------------------
+- Simplified evaluateLogConDens and quantilesLogConDens. Therefore, J00 was slightly generalized to variable upper
+  endpoint and the function qloglin was introduced.
+- Replaced the variable name F for the estimated distribution function by Fhat.
+- Shortened title.
+
 logcondens_1.1:
 ---------------------------------
 - Specified affiliations.
