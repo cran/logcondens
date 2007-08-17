@@ -8,16 +8,16 @@
   
   where \eqn{\varphi} is parametrized via 
   
-  \deqn{\eta(\varphi) = \Bigl(\varphi_1, \Bigl(\eta_1 + \sum_{j=2}^i (x_i-x_{i-1})\eta_i\Bigr)_{i=2}^m\Bigr).} 
+  \deqn{{\bold{\eta}}({\bold{\varphi}}) = \Bigl(\varphi_1, \Bigl(\eta_1 + \sum_{j=2}^i (x_i-x_{i-1})\eta_i\Bigr)_{i=2}^m\Bigr).} 
 }
 \usage{Lhat_eta(x, w, eta)}
 \arguments{
   \item{x}{Vector of independent and identically distributed numbers, with strictly increasing entries.}
-  \item{w}{Optional vector of nonnegative weights corresponding to \eqn{x}, where \eqn{w_1 > 0} and \eqn{w_m > 0}. These raw weights are 
+  \item{w}{Optional vector of nonnegative weights corresponding to \eqn{{\bold{x}}}, where \eqn{w_1 > 0} and \eqn{w_m > 0}. These raw weights are 
             normalized in order to sum to one. Default: \eqn{w_i = 1/m}.}
-  \item{eta}{Some vector \eqn{\eta} of the same length as \eqn{x} and \eqn{w}.}
+  \item{eta}{Some vector \eqn{{\bold{\eta}}} of the same length as \eqn{{\bold{x}}} and \eqn{{\bold{w}}}.}
 }
-\value{Value \eqn{L(\varphi) = L(\varphi(\eta))} of the log-likelihood function is returned.}
+\value{Value \eqn{L({\bold{\varphi}}) = L({\bold{\varphi}}({\bold{\eta}}))} of the log-likelihood function is returned.}
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@stanford.edu}, \cr \url{http://www.stanford.edu/~kasparr} 
 

@@ -15,7 +15,7 @@ where \eqn{G^{-1}_\theta} is described in \code{\link{qloglin}}.}
 \usage{quantilesLogConDens(p0, x, phi, Fhat)}
 \arguments{
   \item{p0}{Real number where quantil should be computed.}
-  \item{x}{Sorted vector of original observations \eqn{x = (x_1, \ldots, x_m).}}
+  \item{x}{Sorted vector of original observations \eqn{{\bold{x}} = (x_1, \ldots, x_m).}}
   \item{phi}{Vector \eqn{(\widehat \varphi_m(x_1), \ldots, \widehat \varphi_m(x_m)),} representing the function \eqn{\widehat \varphi_m}, as computed by \code{\link{activeSetLogCon}}.}
   \item{Fhat}{Vector \eqn{(\widehat F_{m,i})_{i=1}^m} with entries \deqn{\widehat F_{m,i} = \int_{x_1}^{x_i} \exp(\widehat \varphi_m(t)) dt,} as computed by \code{\link{activeSetLogCon}}.}
 }

@@ -3,14 +3,14 @@
 \alias{logcon}
 \docType{package}
 \title{Estimate a Log-Concave Probability Density from iid Observations}
-\description{Given a vector of observations \eqn{x = (x_1, \ldots, x_m)} with pairwise distinct entries and
-a vector of weights \eqn{w=(w_1, \ldots, w_m)} s.t. \eqn{\sum_{i=1}^m w_i = 1}, this package allows to compute a 
+\description{Given a vector of observations \eqn{{\bold{x}} = (x_1, \ldots, x_m)} with pairwise distinct entries and
+a vector of weights \eqn{{\bold{w}}=(w_1, \ldots, w_m)} s.t. \eqn{\sum_{i=1}^m w_i = 1}, this package allows to compute a 
 concave, piecewise linear function \eqn{\widehat \varphi_m} on \eqn{[x_1, x_m]} with knots only in 
 \eqn{\{x_1, \ldots, x_m\}} such that 
  
  \deqn{L(\varphi) = \sum_{i=1}^m w_i \varphi(x_i) - \int_{-\infty}^\infty \exp(\varphi(t)) dt}
  
- is maximal. According to the results in Duembgen and Rufibach (2006), this function \eqn{\widehat \varphi_m} maximizes the ordinary log-likelihood 
+ is maximal. According to the results in Duembgen and Rufibach (2007), this function \eqn{\widehat \varphi_m} maximizes the ordinary log-likelihood 
  
 \deqn{\sum_{i=1}^m w_i \varphi(x_i)}
  
@@ -20,11 +20,14 @@ integrates to one. Two algorithms are offered: An active set and an iterative al
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 1.2\cr
-Date: \tab 2006-10-27\cr
+Version: \tab 1.3.0 \cr
+Date: \tab 2007-08-17\cr
 License: \tab GPL version 2 or newer \cr
 }
-Use this package to estimate a log-concave density from i.i.d. observations. The package offers two algorithms which are implemented in the functions \code{\link{icmaLogCon}} and \code{\link{activeSetLogCon}}. Additionally, the value of the log-density, the density and the distribution function can be computed using \code{\link{evaluateLogConDens}}. To compute quantiles of the estimated distribution function use \code{\link{quantilesLogConDens}}.
+Use this package to estimate a log-concave density from i.i.d. observations. The package offers two algorithms which are 
+implemented in the functions \code{\link{icmaLogCon}} and \code{\link{activeSetLogCon}}. Additionally, the value of the 
+log-density, the density and the distribution function can be computed using \code{\link{evaluateLogConDens}}. 
+To compute quantiles of the estimated distribution function use \code{\link{quantilesLogConDens}}.
 }
 \author{
 Kaspar Rufibach (maintainer), \email{kaspar.rufibach@stanford.edu}, \cr \url{http://www.stanford.edu/~kasparr} 
@@ -35,20 +38,21 @@ Kaspar Rufibach gratefully acknowledges support by the Swiss National Science Fo
 
 MatLab code with an implementation of the active set algorithm is available on request from Lutz Duembgen.}
 \references{
-Duembgen, L. and Rufibach, K. (2006) 
-Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
-Preprint, IMSV, University of Bern.
-              
-Duembgen, L, Huesler, A. and Rufibach, K. (2006) 
-Active set and EM algorithms for log-concave densities based on complete and censored data. 
+Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
+PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.
+\cr Available at \url{http://www.stub.unibe.ch/download/eldiss/06rufibach_k.pdf}.
+
+Duembgen, L. and Rufibach, K. (2007)
+Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency.
 Preprint, IMSV, University of Bern.
 
-Rufibach, K. (2006a) 
-Computing maximum likelihood estimators of a log-concave density function. 
-To appear in \emph{Journal of Statistical Computation and Simulation.}
-              
-Rufibach K. (2006b) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
-PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.
+Duembgen, L, Huesler, A. and Rufibach, K. (2007)
+Active set and EM algorithms for log-concave densities based on complete and censored data.
+Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
+
+Rufibach, K. (2007)
+Computing maximum likelihood estimators of a log-concave density function.
+\emph{J. Stat. Comput. Simul.} \bold{77}, 561--574.
 }
 
 \examples{

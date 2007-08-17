@@ -17,7 +17,7 @@ for the function \eqn{J} introduced in \code{\link{Jfunctions}}.
 \usage{evaluateLogConDens(x0, x, phi, Fhat, IsKnot)}
 \arguments{
   \item{x0}{Real number where the functions should be evaluated at.}
-  \item{x}{Vector \eqn{x = (x_1, \ldots, x_m)} of original observations (sorted).}
+  \item{x}{Vector \eqn{{\bold{x}} = (x_1, \ldots, x_m)} of original observations (sorted).}
   \item{phi}{Vector \eqn{(\widehat \varphi_m(x_i))_{i=1}^m}, as computed by \code{\link{activeSetLogCon}}.}
   \item{Fhat}{Vector \eqn{(\widehat F_m(x_i))_{i=1}^m}, as computed by \code{\link{activeSetLogCon}}.}
   \item{IsKnot}{0-1 vector giving the kinks of \eqn{\widehat \varphi_m}, as computed by \code{\link{activeSetLogCon}}.}

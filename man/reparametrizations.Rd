@@ -7,11 +7,11 @@
   Given a vector \eqn{(\varphi_1, \ldots, \varphi_m)} representing the values of a piecewise linear concave function at
   \eqn{x_1, \ldots, x_m,} \code{\link{etaphi}} returns a column vector with the entries
    
-  \deqn{\eta = \Bigl(\varphi_1, \Bigl(\eta_1 + \sum_{j=2}^m (x_i-x_{i-1})\eta_i\Bigr)_{i=2}^m\Bigr). }
+  \deqn{{\bold{\eta}} = \Bigl(\varphi_1, \Bigl(\eta_1 + \sum_{j=2}^m (x_i-x_{i-1})\eta_i\Bigr)_{i=2}^m\Bigr). }
   
   The function \code{\link{phieta}} returns a vector with the entries 
   
-  \deqn{\varphi = \Bigl(\eta_1, \Bigl(\frac{\varphi_i-\varphi_{i-1}}{x_i-x_{i-1}}\Bigr)_{i=2}^m\Bigr).}
+  \deqn{{\bold{\varphi}} = \Bigl(\eta_1, \Bigl(\frac{\varphi_i-\varphi_{i-1}}{x_i-x_{i-1}}\Bigr)_{i=2}^m\Bigr).}
 }
 \usage{etaphi(x, eta)
 phieta(x, phi)}

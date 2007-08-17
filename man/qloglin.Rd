@@ -13,7 +13,7 @@
   in this model, for \eqn{u \in [0,1]}. This quantile function is used for the computation of quantiles of \eqn{\widehat F_m} in \code{\link{quantilesLogConDens}}.} 
 \usage{qloglin(u, t)}
 \arguments{
-  \item{u}{Vector \eqn{[0,1]^d} where quantiles are to be computed at.}
+  \item{u}{Vector in \eqn{[0,1]^d} where quantiles are to be computed at.}
   \item{t}{Parameter \eqn{\theta}.}
 }
 \value{\item{z}{Column vector containing the quantiles \eqn{G_n^{-1}(u_i)} for \eqn{i = 1, \ldots, d}.}}

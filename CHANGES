@@ -1,3 +1,9 @@
+logcondens_1.3.0:
+---------------------------------
+- Modified quantilesLogConDens. Value for p0 > 1 is set to +Inf.
+- Added the functions intF and intECDF.
+- Updated references.
+
 logcondens_1.2:
 ---------------------------------
 - Simplified evaluateLogConDens and quantilesLogConDens. Therefore, J00 was slightly generalized to variable upper

@@ -4,8 +4,8 @@
 \alias{log-concave}
 \alias{logcondens}
 \title{Computes a Log-Concave Probability Density Estimate via an Active Set Algorithm}
-\description{Given a vector of observations \eqn{x = (x_1, \ldots, x_m)} with pairwise distinct entries and
-a vector of weights \eqn{w=(w_1, \ldots, w_m)} s.t. \eqn{\sum_{i=1}^m w_i = 1}, \code{\link{activeSetLogCon}} computes a concave, piecewise 
+\description{Given a vector of observations \eqn{{\bold{x}} = (x_1, \ldots, x_m)} with pairwise distinct entries and
+a vector of weights \eqn{{\bold{w}}=(w_1, \ldots, w_m)} s.t. \eqn{\sum_{i=1}^m w_i = 1}, \code{\link{activeSetLogCon}} computes a concave, piecewise 
 linear function \eqn{\widehat \varphi_m} on \eqn{[x_1, x_m]} with knots only in \eqn{\{x_1, \ldots, x_m\}} such that 
   
   \deqn{L(\varphi) = \sum_{i=1}^m w_i \varphi(x_i) - \int_{-\infty}^\infty \exp(\varphi(t)) dt}
@@ -14,7 +14,7 @@ linear function \eqn{\widehat \varphi_m} on \eqn{[x_1, x_m]} with knots only in 
 \usage{activeSetLogCon(x, w = NA, print = FALSE)}
 \arguments{
   \item{x}{Vector of independent and identically distributed numbers, with strictly increasing entries.}
-  \item{w}{Optional vector of nonnegative weights corresponding to \eqn{x}, where \eqn{w_1 > 0} and \eqn{w_m > 0}. These raw weights are 
+  \item{w}{Optional vector of nonnegative weights corresponding to \eqn{{\bold{x}}}, where \eqn{w_1 > 0} and \eqn{w_m > 0}. These raw weights are 
             normalized in order to sum to one. Default: \eqn{w_i = 1 / m.}}
   \item{print}{print = TRUE outputs log-likelihood in every loop, print = FALSE does not. Make sure to tell R to output (press CTRL+W).}
 }
@@ -23,25 +23,25 @@ linear function \eqn{\widehat \varphi_m} on \eqn{[x_1, x_m]} with knots only in 
   \item{phi}{Column vector with entries \eqn{\widehat \varphi_m(x_i)}.}
   \item{IsKnot}{Column vector with entries \cr
   IsKnot\eqn{_i = 1\{\widehat \varphi_m} has a kink at \eqn{x_i\}}.}
-  \item{L}{The value \eqn{L(\widehat \varphi_m)} of the log-likelihood-function \eqn{L} at the maximum \eqn{\widehat \varphi_m}.}
-  \item{F}{A vector \eqn{(\widehat F_{m,i})_{i=1}^m} of the same size as \eqn{x} with entries 
+  \item{L}{The value \eqn{L(\widehat {\bold{\varphi}}_m)} of the log-likelihood-function \eqn{L} at the maximum \eqn{\widehat {\bold{\varphi}}_m}.}
+  \item{F}{A vector \eqn{(\widehat F_{m,i})_{i=1}^m} of the same size as \eqn{{\bold{x}}} with entries 
   
   \deqn{\widehat F_{m,i} = \int_{x_1}^{x_i} \exp(\widehat \varphi_m(t)) dt.}}
   
   \item{H}{Column vector \eqn{(H_1, \ldots, H_m)'} where \eqn{H_i} is the derivative of 
   
-  \deqn{t \to L(\varphi + t\Delta)}
+  \deqn{t \to L(\varphi + t\Delta_i)}
   
-  at zero and \eqn{\Delta(x) = \min(x - x_k, 0).}}
+  at zero and \eqn{\Delta_i(x) = \min(x - x_i, 0).}}
 }
 \references{
-Duembgen, L. and Rufibach, K. (2006)
+Duembgen, L. and Rufibach, K. (2007)
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 Preprint, IMSV, University of Bern.
               
-Duembgen, L, Huesler, A. and Rufibach, K. (2006)
+Duembgen, L, Huesler, A. and Rufibach, K. (2007)
 Active set and EM algorithms for log-concave densities based on complete and censored data. 
-Preprint, IMSV, University of Bern.
+Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
 }
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@stanford.edu}, \cr \url{http://www.stanford.edu/~kasparr} 
@@ -76,7 +76,7 @@ Fx0 <- evaluateLogConDens(x0, x, res$phi, res$Fhat, res$IsKnot)[3]
 plot(x, res$Fhat, type = 'l'); rug(x)
 abline(v = x0, lty = 3); abline(h = Fx0, lty = 3)
 
-## compute and plot 0.9-quantile of Fhat\coprod
+## compute and plot 0.9-quantile of Fhat
 q <- quantilesLogConDens(0.9, x, res$phi, res$Fhat)
 plot(x, res$Fhat, type = 'l'); rug(x)
 abline(h = 0.9, lty = 3); abline(v = q, lty = 3)

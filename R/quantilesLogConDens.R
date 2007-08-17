@@ -5,8 +5,11 @@ function (p0, x, phi, Fhat)
     if (p0 <= 0) {
         q <- -Inf
     }
-    if (p0 >= 1) {
+    if (p0 == 1) {
         q <- x[n]
+    }
+    if (p0 >  1) {
+        q <- Inf
     }
     if (p0 > 0 && p0 < 1) {
         n <- length(x)
