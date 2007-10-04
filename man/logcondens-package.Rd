@@ -30,7 +30,7 @@ log-density, the density and the distribution function can be computed using \co
 To compute quantiles of the estimated distribution function use \code{\link{quantilesLogConDens}}.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@stanford.edu}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
 
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.stat.unibe.ch/~duembgen}
 

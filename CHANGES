@@ -1,3 +1,7 @@
+logcondens_1.3.1:
+---------------------------------
+- Updated contact informations.
+
 logcondens_1.3.0:
 ---------------------------------
 - Modified quantilesLogConDens. Value for p0 > 1 is set to +Inf.

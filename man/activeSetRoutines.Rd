@@ -29,7 +29,7 @@ LocalMLE(x, w, IsKnot, phi_o, prec)
   \item{prec}{Threshold for the directional derivative during Newton-Raphson procedure.}
 }
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@stanford.edu}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach, \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
 
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.stat.unibe.ch/~duembgen}}
 
