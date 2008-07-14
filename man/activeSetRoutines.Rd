@@ -29,9 +29,9 @@ LocalMLE(x, w, IsKnot, phi_o, prec)
   \item{prec}{Threshold for the directional derivative during Newton-Raphson procedure.}
 }
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.stat.unibe.ch/~duembgen}}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 
 \seealso{All the above functions are used by \code{\link{activeSetLogCon}} to estimate a log-concave
 probability density.

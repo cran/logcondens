@@ -19,9 +19,9 @@
 \value{\item{z}{Column vector containing the quantiles \eqn{G_n^{-1}(u_i)} for \eqn{i = 1, \ldots, d}.}}
 \note{Taylor approximation is used if \eqn{\theta} is small.}
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.stat.unibe.ch/~duembgen}}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 
 \keyword{htest}
 \keyword{nonparametric}

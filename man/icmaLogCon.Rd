@@ -43,9 +43,9 @@ Computing maximum likelihood estimators of a log-concave density function.
 
 }
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.stat.unibe.ch/~duembgen}}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 \seealso{The following functions are used by \code{\link{icmaLogCon}}: 
 
 \code{\link{phieta}}, \code{\link{etaphi}}, \code{\link{Lhat_eta}}, \code{\link{quadDeriv}},

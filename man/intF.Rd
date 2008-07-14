@@ -18,28 +18,28 @@ for \eqn{x \in [x_j, x_{j+1}], \ j = 1,\ldots,m-1}, \eqn{\Delta v_{i+1} = v_{i+1
 and the function \eqn{J} introduced in \code{\link{Jfunctions}}.
 
 }
-\usage{intF(s, x, phi)}
+\usage{intF(s, x, phi, Fhat)}
 \arguments{
   \item{s}{Vector of real numbers where the functions should be evaluated at.}
   \item{x}{Vector \eqn{{\bold{x}} = (x_1, \ldots, x_m)} of original observations (sorted).}
   \item{phi}{Vector \eqn{(\widehat \varphi_m(x_i))_{i=1}^m}, as computed by \code{\link{activeSetLogCon}}.}
+  \item{Fhat}{Vector \eqn{(\widehat F_{m,i})_{i=1}^m} with entries \deqn{\widehat F_{m,i} = \int_{x_1}^{x_i} \exp(\widehat \varphi_m(t)) dt,} as computed by \code{\link{activeSetLogCon}}.}
 }
 \value{Vector of the same length as \eqn{\bold{s}}, containing the values of \eqn{\widehat I} at the elements of \eqn{\bold{s}}.}
 
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.stat.unibe.ch/~duembgen}}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 \seealso{
 This function uses the output of \code{\link{activeSetLogCon}}. The function \code{\link{intECDF}} is similar, but based
 on the empirical distribution function.
-
 }
 
 \references{
-Duembgen, L. and Rufibach, K. (2007)
+Duembgen, L. and Rufibach, K. (2008)
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency.
-Preprint, IMSV, University of Bern.
+Bernoulli, to appear.
 
 Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.
@@ -52,9 +52,9 @@ set.seed(1977)
 x <- sort(rgamma(200, 2, 1))
 res <- activeSetLogCon(x, w = NA, print = FALSE)
 
-## compute and plot the process D(t) in Duembgen and Rufibach (2007)
+## compute and plot the process D(t) in Duembgen and Rufibach (2008)
 s <- seq(min(x), max(x), by = 10 ^ -3)
-D1 <- intF(s, x, res$phi)
+D1 <- intF(s, x, res$phi, res$F)
 D2 <- intECDF(s, x)
 par(mfrow = c(2, 1))
 plot(x, res$phi, type = 'l'); rug(x)

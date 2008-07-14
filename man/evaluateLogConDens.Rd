@@ -24,9 +24,9 @@ for the function \eqn{J} introduced in \code{\link{Jfunctions}}.
 }
 \value{Vector \eqn{(\widehat \varphi_m(x_0), \widehat f_m(x_0), \widehat F_m(x_0))}.}
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.stat.unibe.ch/~duembgen}}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 \seealso{
 This function uses the output of \code{\link{activeSetLogCon}}.
 

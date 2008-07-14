@@ -1,5 +1,5 @@
 "intF" <-
-function (s, x, phi) 
+function (s, x, phi, Fhat) 
 {
     if (min(s) < min(x) | max(s) > max(x)) {
         cat("All elements of s must be in [x_1, x_n]!")
@@ -9,7 +9,7 @@ function (s, x, phi)
         dx <- c(NA, diff(x))
         dphi <- c(NA, diff(phi))
         f <- exp(phi)
-        F <- res$F
+        F <- Fhat
         intF.xi <- c(0, rep(NA, n - 1))
         for (i in 2:n) {
             intF.xi[i] <- dx[i] * (F[i - 1] + dx[i]/dphi[i] * 

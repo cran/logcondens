@@ -21,9 +21,9 @@ a new candidate for \eqn{\varphi} via the Newton method as well as the direction
   \item{dirderiv}{Directional derivative of \eqn{\varphi \to L(\varphi)} into the direction \eqn{\varphi_{new}.}}
 }
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.stat.unibe.ch/~duembgen}}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 
 \keyword{htest}
 \keyword{nonparametric}

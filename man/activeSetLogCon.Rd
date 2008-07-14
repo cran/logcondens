@@ -35,18 +35,18 @@ linear function \eqn{\widehat \varphi_m} on \eqn{[x_1, x_m]} with knots only in 
   at zero and \eqn{\Delta_i(x) = \min(x - x_i, 0).}}
 }
 \references{
-Duembgen, L. and Rufibach, K. (2007)
-Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
-Preprint, IMSV, University of Bern.
-              
 Duembgen, L, Huesler, A. and Rufibach, K. (2007)
 Active set and EM algorithms for log-concave densities based on complete and censored data. 
 Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
+
+Duembgen, L. and Rufibach, K. (2008)
+Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
+Bernoulli, to appear.            
 }
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.stat.unibe.ch/~duembgen}}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 \seealso{The following functions are used by \code{\link{activeSetLogCon}}: 
 
 \code{\link{J00}}, \code{\link{J10}}, \code{\link{J11}}, \code{\link{J20}},

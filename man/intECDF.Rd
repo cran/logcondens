@@ -21,18 +21,18 @@ where \eqn{i_0 = \max_{i=1,\ldots,m} \{x_i \le t\}}.
 \value{Vector of the same length as \eqn{\bold{s}}, containing the values of \eqn{\bar I} at the elements of \eqn{\bold{s}}.}
 
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@freesurf.ch}, \cr \url{http://www.stanford.edu/~kasparr} 
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.stat.unibe.ch/~duembgen}}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 \seealso{
 This function together with \code{\link{intF}} can be used to check the characterization of the log-concave density
-estimator in terms of distribution functions, see Rufibach (2006) and Duembgen and Rufibach (2007).
+estimator in terms of distribution functions, see Rufibach (2006) and Duembgen and Rufibach (2008).
 }
 
 \references{
-Duembgen, L. and Rufibach, K. (2007)
+Duembgen, L. and Rufibach, K. (2008)
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency.
-Preprint, IMSV, University of Bern.
+Bernoulli, to appear.
 
 Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.
