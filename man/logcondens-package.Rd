@@ -10,7 +10,7 @@ concave, piecewise linear function \eqn{\widehat \varphi_m} on \eqn{[x_1, x_m]} 
  
  \deqn{L(\varphi) = \sum_{i=1}^m w_i \varphi(x_i) - \int_{-\infty}^\infty \exp(\varphi(t)) dt}
  
- is maximal. According to the results in Duembgen and Rufibach (2008), this function \eqn{\widehat \varphi_m} maximizes the ordinary log-likelihood 
+ is maximal. According to the results in Duembgen and Rufibach (2009), this function \eqn{\widehat \varphi_m} maximizes the ordinary log-likelihood 
  
 \deqn{\sum_{i=1}^m w_i \varphi(x_i)}
  
@@ -20,8 +20,8 @@ integrates to one. Two algorithms are offered: An active set and an iterative al
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 1.3.2 \cr
-Date: \tab 2008-07-14\cr
+Version: \tab 1.3.3 \cr
+Date: \tab 2009-03-04\cr
 License: \tab GPL version 2 or newer \cr
 }
 Use this package to estimate a log-concave density from i.i.d. observations. The package offers two algorithms which are 
@@ -38,9 +38,9 @@ Kaspar Rufibach gratefully acknowledges support by the Swiss National Science Fo
 
 MatLab code with an implementation of the active set algorithm is available on request from Lutz Duembgen.}
 \references{
-Duembgen, L. and Rufibach, K. (2008)
-Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency.
-Bernoulli, to appear.
+Duembgen, L. and Rufibach, K. (2009)
+Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
+\emph{Bernoulli}, \bold{15(1)}, 40--68.  
 
 Duembgen, L, Huesler, A. and Rufibach, K. (2007)
 Active set and EM algorithms for log-concave densities based on complete and censored data.

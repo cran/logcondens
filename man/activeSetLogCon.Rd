@@ -39,9 +39,9 @@ Duembgen, L, Huesler, A. and Rufibach, K. (2007)
 Active set and EM algorithms for log-concave densities based on complete and censored data. 
 Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
 
-Duembgen, L. and Rufibach, K. (2008)
+Duembgen, L. and Rufibach, K. (2009)
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
-Bernoulli, to appear.            
+\emph{Bernoulli}, \bold{15(1)}, 40--68.  
 }
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 

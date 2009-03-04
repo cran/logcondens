@@ -26,13 +26,13 @@ Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 \seealso{
 This function together with \code{\link{intF}} can be used to check the characterization of the log-concave density
-estimator in terms of distribution functions, see Rufibach (2006) and Duembgen and Rufibach (2008).
+estimator in terms of distribution functions, see Rufibach (2006) and Duembgen and Rufibach (2009).
 }
 
 \references{
-Duembgen, L. and Rufibach, K. (2008)
-Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency.
-Bernoulli, to appear.
+Duembgen, L. and Rufibach, K. (2009)
+Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
+\emph{Bernoulli}, \bold{15(1)}, 40--68.  
 
 Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.

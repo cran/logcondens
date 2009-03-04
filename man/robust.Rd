@@ -26,7 +26,6 @@ PhD Thesis, University of Bern, Switzerland and Georg-August University of Goett
 Rufibach, K. (2007)
 Computing maximum likelihood estimators of a log-concave density function.
 \emph{J. Stat. Comput. Simul.} \bold{77}, 561--574.
-
 }
 
 \author{

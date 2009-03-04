@@ -37,9 +37,9 @@ on the empirical distribution function.
 }
 
 \references{
-Duembgen, L. and Rufibach, K. (2008)
-Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency.
-Bernoulli, to appear.
+Duembgen, L. and Rufibach, K. (2009)
+Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
+\emph{Bernoulli}, \bold{15(1)}, 40--68.  
 
 Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.
@@ -52,7 +52,7 @@ set.seed(1977)
 x <- sort(rgamma(200, 2, 1))
 res <- activeSetLogCon(x, w = NA, print = FALSE)
 
-## compute and plot the process D(t) in Duembgen and Rufibach (2008)
+## compute and plot the process D(t) in Duembgen and Rufibach (2009)
 s <- seq(min(x), max(x), by = 10 ^ -3)
 D1 <- intF(s, x, res$phi, res$F)
 D2 <- intECDF(s, x)
