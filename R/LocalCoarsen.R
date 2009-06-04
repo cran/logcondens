@@ -1,4 +1,4 @@
-"LocalCoarsen" <-
+`LocalCoarsen` <-
 function (x, w, IsKnot) 
 {
     n <- length(x)
@@ -7,7 +7,7 @@ function (x, w, IsKnot)
     x2 <- x[K]
     w2 <- w[K]
     for (k in 1:(length(K) - 1)) {
-        if (K[k + 1] > K[k] + 1) {
+        if (K[k + 1] > (K[k] + 1)) {
             ind <- (K[k] + 1):(K[k + 1] - 1)
             lambda <- (x[ind] - x2[k])/(x2[k + 1] - x2[k])
             w2[k] <- w2[k] + sum(w[ind] * (1 - lambda))

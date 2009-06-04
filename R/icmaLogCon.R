@@ -1,5 +1,6 @@
-"icmaLogCon" <-
-function (x, w = NA, eps = 10^-8, T1 = 2000, robustif = TRUE, print = FALSE) 
+`icmaLogCon` <-
+function (x, w = NA, eps = 10^-8, T1 = 2000, robustif = TRUE, 
+    print = FALSE) 
 {
     n <- length(x)
     if (sum(x[2:n] <= x[1:n - 1]) > 0) {
@@ -20,7 +21,7 @@ function (x, w = NA, eps = 10^-8, T1 = 2000, robustif = TRUE, print = FALSE)
     eta <- phieta(x, phi)
     loglik <- Lhat_eta(x, w, eta)$ll
     etanew <- 1:n * 0
-    while (abs(dirder) > eps && iter1 < T1) {
+    while ((abs(dirder) > eps) && (iter1 < T1)) {
         iter1 <- iter1 + 1
         derivs <- quadDeriv(dx, w, eta)
         grad <- derivs[, 1]

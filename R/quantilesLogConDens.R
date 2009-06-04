@@ -1,4 +1,4 @@
-"quantilesLogConDens" <-
+`quantilesLogConDens` <-
 function (p0, x, phi, Fhat) 
 {
     n <- length(x)
@@ -8,14 +8,16 @@ function (p0, x, phi, Fhat)
     if (p0 == 1) {
         q <- x[n]
     }
-    if (p0 >  1) {
+    if (p0 > 1) {
         q <- Inf
     }
-    if (p0 > 0 && p0 < 1) {
+    if ((p0 > 0) && (p0 < 1)) {
         n <- length(x)
         xj <- max(x[Fhat <= p0])
         j <- length(x[x <= xj])
-        q <- xj + (x[j+1]-x[j]) * qloglin((p0-Fhat[j])/(Fhat[j+1]-Fhat[j]), (x[j+1]-x[j])*(phi[j+1]-phi[j]))
+        q <- xj + (x[j + 1] - x[j]) * qloglin((p0 - Fhat[j])/(Fhat[j + 
+            1] - Fhat[j]), (x[j + 1] - x[j]) * (phi[j + 1] - 
+            phi[j]))
     }
     return(q)
 }

@@ -1,4 +1,4 @@
-"activeSetLogCon" <-
+`activeSetLogCon` <-
 function (x, w = NA, print = FALSE) 
 {
     prec <- 10^(-10)

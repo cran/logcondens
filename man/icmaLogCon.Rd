@@ -42,7 +42,7 @@ Computing maximum likelihood estimators of a log-concave density function.
 \emph{J. Stat. Comput. Simul.} \bold{77}, 561--574.
 }
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
+Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
 
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 \seealso{The following functions are used by \code{\link{icmaLogCon}}: 
@@ -56,12 +56,14 @@ Log concave density estimation via an Active Set Algorithm can be performed usin
 \examples{
 set.seed(1977)
 x <- sort(rgamma(200, 2, 1))
+\dontrun{
 res <- icmaLogCon(x, w = NA, T1 = 2000, robustif = TRUE, print = TRUE)
 
 ## plot resulting functions
 par(mfrow = c(2, 1), mar = c(3, 2, 1, 2))
 plot(x, res$f, type = 'l'); rug(x)
 plot(x, log(res$f), type = 'l'); rug(x)
+}
 }
 \keyword{htest}
 \keyword{nonparametric}

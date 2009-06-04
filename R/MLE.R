@@ -1,4 +1,4 @@
-"MLE" <-
+`MLE` <-
 function (x, w = NA, phi_o = NA, prec = 10^(-7), print = FALSE) 
 {
     n <- length(x)
@@ -25,11 +25,11 @@ function (x, w = NA, phi_o = NA, prec = 10^(-7), print = FALSE)
     L <- res$ll
     phi_new <- res$phi_new
     dirderiv <- res$dirderiv
-    while (dirderiv >= prec & iter0 < 100) {
+    while ((dirderiv >= prec) & (iter0 < 100)) {
         iter0 <- iter0 + 1
         L_new <- Local_LL(x, ww, phi_new)
         iter1 <- 0
-        while (L_new < L & iter1 < 20) {
+        while ((L_new < L) & (iter1 < 20)) {
             iter1 <- iter1 + 1
             phi_new <- 0.5 * (phi + phi_new)
             L_new <- Local_LL(x, ww, phi_new)
@@ -64,6 +64,7 @@ function (x, w = NA, phi_o = NA, prec = 10^(-7), print = FALSE)
                   4), sep = ""))
         }
     }
-    return(list(phi = matrix(phi, ncol = 1), L = L, Fhat = matrix(LocalF(x, 
-        phi), ncol = 1)))
+    res <- list(phi = matrix(phi, ncol = 1), L = L, Fhat = matrix(LocalF(x, 
+        phi), ncol = 1))
+    return(res)
 }

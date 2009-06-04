@@ -20,9 +20,9 @@ integrates to one. Two algorithms are offered: An active set and an iterative al
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 1.3.3 \cr
-Date: \tab 2009-03-04\cr
-License: \tab GPL version 2 or newer \cr
+Version: \tab 1.3.4 \cr
+Date: \tab 2009-06-04 \cr
+License: \tab GPL (>=2) \cr
 }
 Use this package to estimate a log-concave density from i.i.d. observations. The package offers two algorithms which are 
 implemented in the functions \code{\link{icmaLogCon}} and \code{\link{activeSetLogCon}}. Additionally, the value of the 
@@ -30,7 +30,7 @@ log-density, the density and the distribution function can be computed using \co
 To compute quantiles of the estimated distribution function use \code{\link{quantilesLogConDens}}.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com} 
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html}
 
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}
 
@@ -42,7 +42,7 @@ Duembgen, L. and Rufibach, K. (2009)
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 \emph{Bernoulli}, \bold{15(1)}, 40--68.  
 
-Duembgen, L, Huesler, A. and Rufibach, K. (2007)
+Duembgen, L., Huesler, A. and Rufibach, K. (2007)
 Active set and EM algorithms for log-concave densities based on complete and censored data.
 Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
 

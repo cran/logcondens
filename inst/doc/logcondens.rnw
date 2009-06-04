@@ -1,0 +1,160 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amsfonts,amssymb,times,latexsym,graphicx,epsfig,amsthm,color}
+\usepackage[sort]{natbib}
+%\VignetteIndexEntry{A guide to log-concave density estimation and the logcondens package}
+
+\input{KRcommands}
+
+\addtolength\topmargin{-15mm}
+\addtolength\textheight{25mm}
+\addtolength\textwidth{20mm}
+\setlength{\evensidemargin}{0mm}
+\setlength{\oddsidemargin}{0mm}
+\setlength{\parindent}{0mm}
+
+\begin{document}
+
+%\addtolength{\baselineskip}{+.5\baselineskip}
+
+\title{Log-concave density estimation for independent, \\identically distributed observations}
+\author{Kaspar Rufibach}
+\date{June 3, 2009}
+
+\maketitle
+
+%--------------------------------------------------------------
+\section{Introduction}
+%--------------------------------------------------------------
+
+This note shortly describes how a log-concave density can be estimated and what algorithms are used in the
+package \verb"logcondens". It is by far not intended to give full reference about the subject, more details can
+be found in \cite{Rufibach:06, Rufibach:07, duembgen_kr_08, DumbHusRuf:07}.
+
+%--------------------------------------------------------------
+\section{Log-concave density estimation}
+%--------------------------------------------------------------
+
+A probability density $f$ on the real line is called log--concave if it may be written as
+$$
+    f(x) \ = \ \exp \varphi(x)
+$$
+for some concave function $\varphi : \R \to [-\infty,\infty)$.
+Let $X_1, X_2, \ldots, X_n$ be independent random variables with such a log--concave probability density.
+The normalized log--likelihood function is given by
+$$
+    \ell(\varphi) \ := \ n^{-1} \sum_{i=1}^n \varphi(X_i) .
+$$
+It may happen that due to rounding errors one observes $\til{X}_i$ in place of $X_i$. In that case, let
+$x_1 < x_2 < \cdots < x_m$ be the different elements of $\{\til{X}_1, \til{X}_2,\ldots,\til{X}_n\}$ and define
+$w_j := n^{-1} \# \{i : \til{X}_i = x_j\}$. Then an appropriate surrogate for the normalized log--likelihood is
+\be
+    \ell(\varphi) \ := \ \sum_{i=1}^m w_i \varphi(x_i) .
+    \label{eq: log-lik}
+\ee In what follows we consider the functional (\ref{eq: log-lik}) for arbitrary given points
+$x_1 < x_2 < \cdots < x_m$ and probability weights $w_1, w_2, \ldots, w_m > 0$, i.e.\ $\sum_{i=1}^m w_i = 1$.
+Suppose that we want to maximize $\ell(\varphi)$ over all functions $\varphi$ that are concave and induce a
+probability density. This is equivalent to maximizing
+$$
+    L(\varphi) \ := \ \sum_{i=1}^m w_i \varphi(x_i) - \int \exp \varphi(x) \, dx
+$$
+over all concave functions $\varphi$. From Theorem 3.2.1 in \cite{Rufibach:06} we know that
+\bea
+    \widehat \varphi_m &:=& \argmin_{\varphi \text{ concave}}L(\varphi)
+\eea is piecewise linear on $[x_1,x_m]$ with knots only in $\hat \SS_m : = \{x_1,\ldots,x_m\}$ and $\widehat \varphi_m=-\infty$
+on $\R \setminus [x_1,x_m]$. Therefore, we can restrict our attention to
+functions of this type and rewrite the log-likelihood function as
+$$
+    L(\varphi) \ = \ L(\ve{\varphi}) := \sum_{j=1}^m w_j \varphi_j - \sum_{k=1}^{m-1} \Delta x_{k+1} J(\varphi_k, \varphi_{k+1})
+$$
+with
+$$
+    J(r,s) \ := \ \int_0^1 \exp \bigl( (1 - t) r + t s \bigr) \, dt
+$$
+for arbitrary $r,s, \in \R$ where we tacitly introduced the following notation: Any continuous concave function that
+is piecewise linear with knots only in $\hat \SS_m$ can be identified with the vector
+$\ve{\varphi} := (\varphi(x_j))_{j=1}^m = (\varphi_j)_{j=1}^m \in \R^m$. Likewise, any
+vector $\ve{\varphi} \in \R^m$ defines a function $\varphi$ via
+$$
+    \varphi(x) \ := \ \Bl( 1 - \frac{x - x_k}{\Del x_{k+1}} \Br) \, \varphi_k^{}
+        + \frac{x - x_k}{\Del x_{k+1}} \, \varphi_{k+1}^{}
+    \quad\mbox{for } x \in [x_k,x_{k+1}], 1 \le k < m ,
+$$
+where $\Del x_k := x_{k} - x_{k-1}$. The maximization problem can now be reformulated to
+\bea
+    \max_{\ve{\varphi} \in \R^m} L(\ve{\varphi})
+\eea under the constraints
+\bea
+    \frac{\Del\varphi_j}{\Del x_j} - \frac{\Del\varphi_{j-1}}{\Del x_{j-1}}  \ \le \ 0  \quad\mbox{for } j = 3,\ldots,m \, .
+\eea
+Standard optimization techniques are now suitable to find this maximum.
+
+%--------------------------------------------------------------
+\section{An active set algorithm}
+%--------------------------------------------------------------
+
+This algorithm maximizes $L$ by alternately going into the ordinary Newton direction (only as far as the constraints
+allow) and altering the set of constraints. To find the Newton direction, the gradient and the Hesse matrix
+of $L$ are needed and are given in \cite{DumbHusRuf:07}. In the latter paper, the general framework
+for active set algorithms is accounted for in Section 3.
+
+This algorithm is implemented in the function \verb"activeSetLogCon".
+
+%--------------------------------------------------------------
+\section{An iterative convex minorant algorithm}
+%--------------------------------------------------------------
+
+To be able to apply such an algorithm, the function $L$ needs to be reparametrized, see \cite{Rufibach:06, Rufibach:07}.
+Define
+\bea
+   \bs{\eta}&=& \Bl(  \varphi_1, \Bl( \frac{\Delta  \varphi_{i}}{\Delta x_{i}} \Br)_{i=2}^{m} \Br),
+\eea the vector of successive slopes of the piecewise linear concave function $\varphi$.
+The back-parametrization is then
+\bea
+   \bs{\varphi}&=& \Bl(  \eta_1, \eta_1+ \Bl( \sum_{j=2}^i \Delta x_i \eta_i \Br)_{i=2}^{m} \Br).
+\eea Inserting this new parametrization $\bs{\eta}$ into $L$, the reparametrized log-likelihood function $L$ becomes
+\bean
+    L(\bs{\eta}) &:=& L(\bs{\eta}(\bs{\varphi})) \nonumber \\
+    %&=& \eta_1 \sum_{i=1}^m w_i + \sum_{i=2}^m w_i \sum_{j=2}^i \Delta x_j \eta_j - e^{\eta_1} \sum_{i=2}^n \exp \Bl( \sum_{k=2}^{i-1} \Delta x_k \eta_k \Br) \frac{\exp(\Delta x_i \eta_i)-1}{\eta_i} \\
+    &=& \eta_1 \sum_{i=1}^m w_i + \sum_{i=2}^m \eta_i \sum_{i=k}^m w_i \Delta x_i  - e^{\eta_1} \sum_{i=2}^m \exp \Bl( \sum_{k=2}^{i-1} \Delta x_k \eta_k \Br) \frac{\exp(\Delta x_i \eta_i)-1}{\eta_i} \ . \label{Leta}
+\eean The point of the reparametrization is, that the optimization problem now writes
+\bea
+    \max_{\ve{\eta} \in \R^m} L(\ve{\eta})
+\eea under the constraints
+\bea
+    \eta_{i-1} \ \ge \ \eta_i  \quad\mbox{for } i = 3,\ldots,m \, .
+\eea Now approximate (\ref{Leta}) quadratically around a given $\ve{\eta}_o \in \R^m$ by the quadratic function
+$\tilde{L}$:
+\bea
+    \tilde{L} ( \ve{\eta}) &=& \tilde{L}(\ve{\eta} \vert \ve{\eta}_o) \\
+    &=& L(\ve{\eta}_o)+ \nabla_{\ve{\eta}} L(\ve{\eta}_o)'(\ve{\eta}-\ve{\eta}_o) + 2^{-1} (\ve{\eta}-\ve{\eta}_o)'\mat{W}(\ve{\eta}_o)(\ve{\eta}-\ve{\eta}_o)
+\eea where $\nabla_{\ve{\eta}} L$ is the gradient of $L$ and $\mat{D}$ some positive definite matrix, which we choose to
+be the diagonal matrix that equals the Hesse on the diagonal. For ease of notation, introduce $\ve{g} :=\nabla_{\ve{\eta}} L(\ve{\eta}_o)$ and $\ve{d} = \diag(\ve{D}(\ve{\eta}_o))$.
+Then rewrite $\tilde{L} ( \ve{\eta})$ as
+\bea
+    \tilde{L} ( \ve{\eta}) &=& \tilde{L} (\ve{\eta}_o) + \sum_{i=1}^m g_i(\eta_i-\eta_{o,i}) + 2^{-1} \sum_{i=1}^m d_i(\eta_i-\eta_{o,i})^2 \\
+    &=& \tilde{L}(\ve{\eta}_o)-2^{-1} \sum_{i=1}^m(g_i/w_i)^2 + 2^{-1} \sum_{i=1}^m d_i\Bl( \eta_i -(\eta_{o,i}-g_i/d_i)\Br)^2
+\eea and the maximization problem to solve becomes
+\bea
+    \max_{\eta_2 \ge \cdots \ge \eta_m} \sum_{i=1}^m d_i\Bl( \eta_i -(\eta_{o,i}-g_i/d_i)\Br)^2.
+\eea But this is exactly what a (weighted) pool-adjacent-violaters algorithm delivers (if we set $\eta_1 =\eta_{o,1}-g_1/d_1$).
+
+Using this, one gets a direction where to go in order to increase the likelihood.
+Supplemented by a robustification procedure and an Hermite interpolation as first described in
+\cite{duembgen_06}, such an iterative algorithm is implemented as the function
+\verb"icmaLogCon".
+
+
+% =======================================
+% \section{References} \label{sec: secondary}
+% =======================================
+%\nocite{*}
+
+\bibliographystyle{ims}
+\bibliography{stat}
+
+
+
+
+
+
+\end{document}

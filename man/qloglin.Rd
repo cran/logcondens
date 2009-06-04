@@ -19,7 +19,7 @@
 \value{\item{z}{Column vector containing the quantiles \eqn{G_n^{-1}(u_i)} for \eqn{i = 1, \ldots, d}.}}
 \note{Taylor approximation is used if \eqn{\theta} is small.}
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
+Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
 
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 

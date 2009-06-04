@@ -1,4 +1,4 @@
-"LocalExtend" <-
+`LocalExtend` <-
 function (x, IsKnot, x2, phi2) 
 {
     n <- length(x)

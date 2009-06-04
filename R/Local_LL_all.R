@@ -1,4 +1,4 @@
-"Local_LL_all" <-
+`Local_LL_all` <-
 function (x, w, phi) 
 {
     n <- length(x)

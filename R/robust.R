@@ -1,4 +1,4 @@
-"robust" <-
+`robust` <-
 function (x, w, eta, etanew, grad) 
 {
     dx <- c(0, diff(x))
@@ -6,7 +6,7 @@ function (x, w, eta, etanew, grad)
     liknew <- Lhat_eta(x, w, etanew)$ll
     dirder <- as.numeric(t(grad) %*% (etanew - eta))
     iter <- 0
-    while (liknew < loglik && iter < 20) {
+    while ((liknew < loglik) && (iter < 20)) {
         iter <- iter + 1
         etanew <- (eta + etanew)/2
         liknew <- Lhat_eta(x, w, etanew)$ll

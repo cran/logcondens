@@ -1,4 +1,4 @@
-"intF" <-
+`intF` <-
 function (s, x, phi, Fhat) 
 {
     if (min(s) < min(x) | max(s) > max(x)) {
@@ -22,12 +22,11 @@ function (s, x, phi, Fhat)
             j <- min(j, n - 1)
             xj <- x[j]
             Fj <- F[j]
-            intF.s[k] <- intF.xi[j] + (s[k] - xj) * F[j] + 
-                dx[j + 1] * (dx[j + 1]/dphi[j + 1] * J00(phi[j], 
-                  phi[j + 1], (s[k] - xj)/(dx[j + 1])) - (s[k] - 
-                  xj)/(dphi[j + 1]) * f[j])
+            intF.s[k] <- intF.xi[j] + (s[k] - xj) * F[j] + dx[j + 
+                1] * (dx[j + 1]/dphi[j + 1] * J00(phi[j], phi[j + 
+                1], (s[k] - xj)/(dx[j + 1])) - (s[k] - xj)/(dphi[j + 
+                1]) * f[j])
         }
         return(intF.s)
     }
 }
-

@@ -21,7 +21,7 @@ phieta(x, phi)}
   \item{phi}{Column vector with entries \eqn{\varphi_i = \varphi(x_i).}}
 }
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
+Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
 
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 

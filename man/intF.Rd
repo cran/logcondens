@@ -28,7 +28,7 @@ and the function \eqn{J} introduced in \code{\link{Jfunctions}}.
 \value{Vector of the same length as \eqn{\bold{s}}, containing the values of \eqn{\widehat I} at the elements of \eqn{\bold{s}}.}
 
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
+Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
 
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 \seealso{

@@ -1,4 +1,4 @@
-"LocalMLE" <-
+`LocalMLE` <-
 function (x, w, IsKnot, phi_o, prec) 
 {
     n <- length(x)
@@ -34,6 +34,7 @@ function (x, w, IsKnot, phi_o, prec)
                 (jtmp1 + jtmp2)
         }
     }
-    return(list(phi = matrix(phi, ncol = 1), L = L, conv = matrix(conv, 
-        ncol = 1), H = matrix(H, ncol = 1)))
+    res <- list(phi = matrix(phi, ncol = 1), L = L, conv = matrix(conv, 
+        ncol = 1), H = matrix(H, ncol = 1))
+    return(res)
 }

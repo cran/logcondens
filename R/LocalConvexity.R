@@ -1,4 +1,4 @@
-"LocalConvexity" <-
+`LocalConvexity` <-
 function (x, phi) 
 {
     n <- length(x)

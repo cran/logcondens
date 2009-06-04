@@ -22,7 +22,8 @@
   
     \deqn{J_{20}(x, y) = 2\frac{\exp(y) - \exp(x) - (y - x)\exp(x)-(y - x)^2 \exp(x)}{(y - x)^3}.}
 }
-\usage{J00(x, y, v)
+\usage{
+J00(x, y, v)
 J10(x, y)
 J11(x, y)
 J20(x, y)}
@@ -34,7 +35,7 @@ J20(x, y)}
 \value{Value of the respective function.}
 \note{Taylor approximations are used if \eqn{y-x} is small.}
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
+Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
 
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 

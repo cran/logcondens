@@ -1,4 +1,4 @@
-"Lhat_eta" <-
+`Lhat_eta` <-
 function (x, w, eta) 
 {
     n <- length(x)

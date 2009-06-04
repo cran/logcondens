@@ -1,4 +1,4 @@
-"intECDF" <-
+`intECDF` <-
 function (s, x) 
 {
     if (min(s) < min(x) | max(s) > max(x)) {

@@ -21,7 +21,7 @@ a new candidate for \eqn{\varphi} via the Newton method as well as the direction
   \item{dirderiv}{Directional derivative of \eqn{\varphi \to L(\varphi)} into the direction \eqn{\varphi_{new}.}}
 }
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
+Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
 
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 

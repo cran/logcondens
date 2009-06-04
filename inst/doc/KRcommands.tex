@@ -1,0 +1,223 @@
+% my citation style
+\newcommand{\mycite}[1]{{\small \sc \citeNP{#1}}}
+
+% edit a manuscript
+\setlength{\marginparsep}{0mm}
+\newcommand{\kr}[1]{{\noindent \bf \color{red}#1}}       % blue, magenta
+\newcommand{\red}[1]{{\noindent \color{red}#1}}
+\newcommand{\blanco}[1]{ }
+
+% special symbols
+\def\bs{\boldsymbol}
+\newcommand{\ED}{{\mathbb F}_n}                     %empirische Verteilungsfunktion
+\newcommand{\Xin}{X_1,\ldots,X_n}                   %sample
+\newcommand{\mean}{\frac{1}{n} \sum_{i=1}^n}        %
+\newcommand{\sumn}{\sum_{i=1}^n}                    %
+\def\d{\, \mathrm d}                                %Ableitungsoperator
+\newcommand{\norm}[1]{\left\Vert #1 \right\Vert}    %Norm
+\newcommand{\SupN}[2]{\Vert #1 \Vert_\infty^{#2}}   %Supremumsnorm: #1: Funktion, #2: Intervall
+\def\Var{\mathop{\rm Var}\nolimits}
+\def\Bias{\mathop{\rm Bias}\nolimits}
+\def\Mse{\mathop{\rm Mse}\nolimits}
+\def\roc{\mathop{\rm ROC}\nolimits}
+\def\auc{\mathop{\rm AUC}\nolimits}
+
+% special symbols for log-concave densities
+\def\est{{\hat f}_n}                                %Schätzer
+\def\lest{{\hat \varphi}_n}                         %log des Schätzers
+\def\dest{{\hat F}_n}                               %Integral des Schätzers
+\def\hest{{\hat \lambda}_n}                         %hazard-Schätzer
+\newcommand{\Hol}[3]{\HH^{#1,#2}(#3)}               %Hölder-Klasse: #1: order \beta, #2: constant, #3: support
+\newcommand{\knots}[1]{\mathop{\rm knots(#1)}\nolimits}
+
+% modes of convergence
+\def\toD{\to_{d}}
+\def\eqD{\stackrel{d}{=}}
+%\def\eqD{=_{\DD}}
+%\def\eqDblank{=_{\color{white}\DD}}   % for use in equation arrays
+\def\toP{\to_{\rm p}}
+\def\toas{\stackrel{\mathrm{as}}{\to}}
+
+% vectors and matrices
+\newcommand{\ve}[1]{\bs{#1}}
+\newcommand{\mat}[1]{\ve{#1}}       % may be changed
+
+% text abbreviations
+\def\iid{i.i.d.~}
+\newcommand{\ie}{i.e.~}
+\newcommand{\eg}{e.g.~}
+\newcommand{\wrt}{w.r.t.~}
+\newcommand{\as}{a.s.~}
+
+% formatting
+\newcommand{\ruck}[1]{\strut\hspace{#1cm}}
+
+\def\A{{\bf A}}
+\def\B{{\bf B}}
+\def\C{{\bf C}}
+\def\D{{\bf D}}
+\def\E{{\bf E}}
+\def\F{{\bf F}}
+\def\G{{\bf G}}
+\def\H{{\bf H}}
+\def\J{{\bf J}}
+\def\K{{\bf K}}
+\def\M{{\bf M}}
+%\def\N{{\bf N}}
+\def\O{{\bf O}}
+\def\P{{\bf P}}
+%\def\Q{{\bf Q}}
+%\def\R{{\bf R}}
+\def\S{{\bf S}}
+\def\T{{\bf T}}
+\def\U{{\bf U}}
+\def\V{{\bf V}}
+\def\W{{\bf W}}
+\def\x{{\bf x}}
+\def\X{{\bf X}}
+\def\y{{\bf y}}
+\def\Y{{\bf Y}}
+\def\z{{\bf z}}
+%\def\Z{{\bf Z}}
+
+\def\AA{{\cal A}}
+\def\BB{{\cal B}}
+\def\CC{{\cal C}}
+\def\DD{{\cal D}}
+\def\EE{{\cal E}}
+\def\FF{{\cal F}}
+\def\GG{{\cal G}}
+\def\HH{{\cal H}}
+\def\II{{\cal I}}
+\def\JJ{{\cal J}}
+\def\KK{{\cal K}}
+\def\LL{{\cal L}}
+\def\MM{{\cal M}}
+\def\NN{{\cal N}}
+\def\OO{{\cal O}}
+\def\PP{{\cal P}}
+\def\QQ{{\cal Q}}
+\def\RR{{\cal R}}
+\def\SS{{\cal S}}
+\def\TT{{\cal T}}
+\def\UU{{\cal U}}
+\def\VV{{\cal V}}
+\def\WW{{\cal W}}
+\def\XX{{\cal X}}
+\def\YY{{\cal Y}}
+\def\ZZ{{\cal Z}}
+
+\def\alp{\alpha}
+\def\gam{\gamma}
+\def\Gam{\Gamma}
+\def\del{\delta}
+\def\Del{\Delta}
+\def\eps{\varepsilon}
+\def\kap{\kappa}
+\def\lam{\lambda}
+\def\Lam{\Lambda}
+\def\sig{\sigma}
+\def\Sig{\Sigma}
+\def\th{\theta}
+\def\Th{\Theta}
+\def\om{\omega}
+\def\Om{\Omega}
+
+\def\bea{\begin{eqnarray*}}
+\def\eea{\end{eqnarray*}}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bean{\begin{eqnarray}}
+\def\eean{\end{eqnarray}}
+\def\barr{\begin{array}}
+\def\earr{\end{array}}
+\def\bdes{\begin{description}}
+\def\edes{\end{description}}
+\def\bi{\begin{itemize}}
+\def\ei{\end{itemize}}
+
+\def\nin{\noindent}
+\def\nn{\nonumber}
+\def\npb{\nopagebreak}
+
+\def\comp{^{\rm c}}
+\def\trans{^\top}
+\def\cd{ \, \vert \, }
+\def\Bcd{ \, \Big\vert \, }
+
+\def\Bl{\Bigl}
+\def\Br{\Bigr}
+\def\la{\leftarrow}
+\def\op{o_{\rm p}}
+\def\Op{O_{\rm p}}
+\def\da{\downarrow}
+\def\ua{\uparrow}
+\def\by{\times}
+\def\til{\widetilde}
+\def\hat{\widehat}
+\def\setm{\setminus}
+\def\subs{\subset}
+\def\sups{\supset}
+\def\lg{\langle}
+\def\rg{\rangle}
+
+\def\Ex{\mathop{\rm I\!E}\nolimits}
+\def\Pr{\mathop{\rm I\!P}\nolimits}
+
+\def\N{\mathbb{N}}
+\def\Q{\mathbb{Q}}
+\def\R{\mathbb{R}}
+\def\Z{\mathbb{Z}}
+
+\newcommand{\dom}{\mathrm{dom}}
+\def\const{\mathop{\rm const}}
+\def\arctanh{\mathop{\rm arctanh}}
+\def\artanh{\mathop{\rm artanh}}
+\def\argmax{\mathop{\rm arg\,max}}
+\def\argmin{\mathop{\rm arg\,min}}
+\def\ave{\mathop{\rm ave}}
+\def\Beta{{\rm Beta}}
+\def\Bin{{\rm Bin}}
+\def\Borel{{\rm Borel}}
+\def\cl{{\rm cl}}
+\def\conv{\mathop{\rm conv}\nolimits}
+\def\cone{\mathop{\rm cone}\nolimits}
+\def\Cov{\mathop{\rm Cov}\nolimits}
+\def\Corr{\mathop{\rm Corr}\nolimits}
+\def\det{\mathop{\rm det}}
+\def\diag{\mathop{\rm diag}\nolimits}
+\def\diam{\mathop{\rm diam}\nolimits}
+\def\dist{\mathop{\rm dist}\nolimits}
+\def\dim{\mathop{\rm dim}\nolimits}
+\def\Exp{\mathop{\rm Exp}\nolimits}
+\def\extr{\mathop{\rm extr}\nolimits}
+\def\Geom{\mathop{\rm Geom}\nolimits}
+\def\Hyp{{\rm Hyp}}
+\def\id{\mathop{\rm id}\nolimits}
+\def\Leb{\mathop{\rm Leb}\nolimits}
+\def\lin{{\rm lin}}
+\def\Med{\mathop{\rm Med}\nolimits}
+\def\Median{{\rm Median}}
+%\def\mod{\mathop{\rm mod}\nolimits}
+\def\Poiss{{\rm Poiss}}
+\def\rang{{\rm rang}}
+\def\rank{{\rm rank}}
+\def\sign{\mathop{\rm sign}}
+\def\spann{{\rm span}}
+\def\Std{\mathop{\rm Std}\nolimits}
+\def\supp{{\rm supp}}
+\def\trace{\mathop{\rm trace}}
+\def\TV{\mathop{\rm TV}\nolimits}
+\def\Var{\mathop{\rm Var}\nolimits}
+\def\Mean{\mathop{\rm Mean}\nolimits}
+
+\def\et{\quad\mbox{and}\quad}
+\def\und{\quad\mbox{und}\quad}
+\def\oder{\quad\mbox{oder}\quad}
+\def\fuer{\quad\mbox{f"ur }}
+\def\fueralle{\quad\mbox{f"ur alle }}
+\def\fuerein{\quad\mbox{f"ur ein }}
+\def\mit{\quad\mbox{mit }}
+\def\falls{\quad\mbox{falls }}
+
+\def\ed{\end{document}}

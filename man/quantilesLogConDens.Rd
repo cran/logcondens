@@ -21,7 +21,7 @@ where \eqn{G^{-1}_\theta} is described in \code{\link{qloglin}}.}
 }
 \value{Returns the real number \eqn{q_0 = \inf_{x}\{\widehat F_m(x) \ge p_0\}.}}
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} 
+Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
 
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 
