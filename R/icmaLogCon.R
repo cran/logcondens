@@ -1,4 +1,4 @@
-`icmaLogCon` <-
+icmaLogCon <-
 function (x, w = NA, eps = 10^-8, T1 = 2000, robustif = TRUE, 
     print = FALSE) 
 {

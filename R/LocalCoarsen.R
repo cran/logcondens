@@ -1,4 +1,4 @@
-`LocalCoarsen` <-
+LocalCoarsen <-
 function (x, w, IsKnot) 
 {
     n <- length(x)

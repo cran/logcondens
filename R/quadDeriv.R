@@ -1,4 +1,4 @@
-`quadDeriv` <-
+quadDeriv <-
 function (dx, w, eta) 
 {
     n <- length(w)

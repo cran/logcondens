@@ -1,4 +1,4 @@
-`isoMean` <-
+isoMean <-
 function (y, w) 
 {
     n <- length(y)

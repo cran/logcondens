@@ -1,4 +1,4 @@
-`intF` <-
+intF <-
 function (s, x, phi, Fhat) 
 {
     if (min(s) < min(x) | max(s) > max(x)) {

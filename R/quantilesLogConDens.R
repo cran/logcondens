@@ -1,4 +1,4 @@
-`quantilesLogConDens` <-
+quantilesLogConDens <-
 function (p0, x, phi, Fhat) 
 {
     n <- length(x)
@@ -19,5 +19,5 @@ function (p0, x, phi, Fhat)
             1] - Fhat[j]), (x[j + 1] - x[j]) * (phi[j + 1] - 
             phi[j]))
     }
-    return(q)
+    return(as.numeric(q))
 }

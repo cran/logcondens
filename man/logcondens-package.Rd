@@ -20,8 +20,8 @@ integrates to one. Two algorithms are offered: An active set and an iterative al
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 1.3.4 \cr
-Date: \tab 2009-06-04 \cr
+Version: \tab 1.3.5 \cr
+Date: \tab 2009-12-07 \cr
 License: \tab GPL (>=2) \cr
 }
 Use this package to estimate a log-concave density from i.i.d. observations. The package offers two algorithms which are 

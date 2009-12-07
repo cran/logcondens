@@ -1,4 +1,4 @@
-`LocalNormalize` <-
+LocalNormalize <-
 function (x, phi) 
 {
     n <- length(x)

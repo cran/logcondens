@@ -1,3 +1,9 @@
+logcondens_1.3.5:
+---------------------------------
+- Added 'reliability' and 'brightstar' datasets.
+- Added 'logconSmoothed'.
+- Added 'rlogcon'.
+
 logcondens_1.3.4:
 ---------------------------------
 - Properly included vignette in the package.

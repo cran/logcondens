@@ -1,4 +1,4 @@
-`qloglin` <-
+qloglin <-
 function (u, t) 
 {
     m <- length(u)

@@ -1,4 +1,4 @@
-`MLE` <-
+MLE <-
 function (x, w = NA, phi_o = NA, prec = 10^(-7), print = FALSE) 
 {
     n <- length(x)

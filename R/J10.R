@@ -1,4 +1,4 @@
-`J10` <-
+J10 <-
 function (x, y) 
 {
     m <- length(x)

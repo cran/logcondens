@@ -1,4 +1,4 @@
-`etaphi` <-
+etaphi <-
 function (x, eta) 
 {
     n <- length(x)

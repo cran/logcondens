@@ -1,4 +1,4 @@
-`LocalMLE` <-
+LocalMLE <-
 function (x, w, IsKnot, phi_o, prec) 
 {
     n <- length(x)

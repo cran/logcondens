@@ -1,4 +1,4 @@
-`robust` <-
+robust <-
 function (x, w, eta, etanew, grad) 
 {
     dx <- c(0, diff(x))

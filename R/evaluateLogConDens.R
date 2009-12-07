@@ -1,4 +1,4 @@
-`evaluateLogConDens` <-
+evaluateLogConDens <-
 function (x0, x, phi, Fhat, IsKnot) 
 {
     n <- length(x)
