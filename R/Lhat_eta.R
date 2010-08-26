@@ -1,6 +1,4 @@
-Lhat_eta <-
-function (x, w, eta) 
-{
+Lhat_eta <- function(x, w, eta){
     n <- length(x)
     dx <- diff(x)
     phi <- etaphi(x, eta)

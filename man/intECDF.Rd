@@ -16,7 +16,7 @@ where \eqn{i_0 = \max_{i=1,\ldots,m} \{x_i \le t\}}.
 \usage{intECDF(s, x)}
 \arguments{
   \item{s}{Vector of real numbers in \eqn{[x_1,x_m]} where \eqn{\bar{I}} should be evaluated at.}
-  \item{x}{Vector \eqn{{\bold{x}} = (x_1, \ldots, x_m)} of original observations (sorted).}
+  \item{x}{Vector \eqn{{\bold{x}} = (x_1, \ldots, x_m)} of original observations.}
 }
 \value{Vector of the same length as \eqn{\bold{s}}, containing the values of \eqn{\bar I} at the elements of \eqn{\bold{s}}.}
 

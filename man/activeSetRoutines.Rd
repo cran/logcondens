@@ -6,6 +6,7 @@
 \alias{LocalF}
 \alias{LocalNormalize}
 \alias{LocalMLE}
+\alias{LocalVariance}
 \title{Auxiliary Numerical Routines for the Function activeSetLogCon}
 \description{Functions that are used by activeSetLogCon.}
 \usage{
@@ -15,14 +16,13 @@ LocalExtend(x, IsKnot, x2, phi2)
 LocalF(x, phi)
 LocalNormalize(x, phi)
 LocalMLE(x, w, IsKnot, phi_o, prec)
+LocalVariance(x, w = NULL, phi)
 }
 \arguments{
   \item{x}{Vector of independent and identically distributed numbers, with strictly increasing entries.}
-  \item{w}{Optional vector of nonnegative weights corresponding to \eqn{{\bold{x}}}, where \eqn{w_1 > 0} and \eqn{w_m > 0}. These raw weights are 
-            normalized in order to sum to one. Default: \eqn{w_i = 1 / m}.}
-  \item{IsKnot}{Column vector with entries \cr
-  IsKnot\eqn{_i = 1\{\varphi} has a kink at \eqn{x_i\}.}}
-  \item{phi}{Column vector with entries \eqn{\varphi(x_i).}}
+  \item{w}{Optional vector of nonnegative weights corresponding to \eqn{{\bold{x}}}.}
+  \item{IsKnot}{Vector with entries IsKnot\eqn{_i = 1\{\varphi} has a kink at \eqn{x_i\}.}}
+  \item{phi}{Vector with entries \eqn{\varphi(x_i).}}
   \item{x2}{Vector of same type as \eqn{{\bold{x}}}.}
   \item{phi2}{Vector of same type as \eqn{{\bold{\varphi}}}.}
   \item{phi_o}{Optional starting vector.}

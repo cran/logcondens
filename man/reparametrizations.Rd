@@ -17,8 +17,8 @@
 phieta(x, phi)}
 \arguments{
   \item{x}{Vector of independent and identically distributed numbers, with strictly increasing entries.}
-  \item{eta}{Column vector with entries \eqn{\eta_i = \eta(x_i).}}
-  \item{phi}{Column vector with entries \eqn{\varphi_i = \varphi(x_i).}}
+  \item{eta}{Vector with entries \eqn{\eta_i = \eta(x_i).}}
+  \item{phi}{Vector with entries \eqn{\varphi_i = \varphi(x_i).}}
 }
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 

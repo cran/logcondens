@@ -1,7 +1,7 @@
 \name{qloglin}
 \alias{qloglin}
 \title{Quantile Function In a Simple Log-Linear model}
-\description{Suppose the random variable X has density function 
+\description{Suppose the random variable \eqn{X} has density function 
 
   \deqn{g_\theta(x) = \frac{\theta \exp(\theta x)}{\exp(\theta) - 1}}
   
@@ -16,7 +16,7 @@
   \item{u}{Vector in \eqn{[0,1]^d} where quantiles are to be computed at.}
   \item{t}{Parameter \eqn{\theta}.}
 }
-\value{\item{z}{Column vector containing the quantiles \eqn{G_n^{-1}(u_i)} for \eqn{i = 1, \ldots, d}.}}
+\value{\item{z}{Vector containing the quantiles \eqn{G_n^{-1}(u_i)} for \eqn{i = 1, \ldots, d}.}}
 \note{Taylor approximation is used if \eqn{\theta} is small.}
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 

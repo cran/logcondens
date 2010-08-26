@@ -1,6 +1,4 @@
-LocalConvexity <-
-function (x, phi) 
-{
+LocalConvexity <- function(x, phi){
     n <- length(x)
     deriv <- diff(phi)/diff(x)
     conv <- 1:n * 0

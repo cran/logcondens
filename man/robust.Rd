@@ -5,8 +5,7 @@
 \usage{robust(x, w, eta, etanew, grad)}
 \arguments{
   \item{x}{Vector of independent and identically distributed numbers, with strictly increasing entries.}
-  \item{w}{Optional vector of nonnegative weights corresponding to \eqn{{\bold{x}}}, where \eqn{w_1 > 0} and \eqn{w_m > 0}. These raw weights are 
-            normalized in order to sum to one. Default: \eqn{w_i = 1/m}.}
+  \item{w}{Optional vector of nonnegative weights corresponding to \eqn{{\bold{x}_m}}.}
   \item{eta}{Current candidate vector.}
   \item{etanew}{New candidate vector.}
   \item{grad}{Gradient of L at current candidate vector \eqn{\eta.}}

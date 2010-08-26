@@ -7,8 +7,7 @@ as described in Duembgen and Rufibach (2009, Section 3).}
 \usage{rlogcon(n, x0)}
 \arguments{
   \item{n}{Size of random sample to be generated.}
-  \item{x0}{Sorted vector of independent and identically distributed numbers. Note that unlike for \code{\link{activeSetLogCon}},
-  here \code{x0} is the vector of initial, unweighted observations, i.e. identical values are allowed.}
+  \item{x0}{Sorted vector of independent and identically distributed numbers, not necessarily unique.}
 }
 \value{
 \item{X}{Random sample from \eqn{\hat f_n}.}
@@ -16,7 +15,7 @@ as described in Duembgen and Rufibach (2009, Section 3).}
 \item{U}{Uniform random sample of size \code{n} used in the generation of \code{X}.}
 \item{Z}{Normal random sample of size \code{n} used in the generation of \code{X_star}.}
 \item{f}{Computed log-concave density estimator.}
-\item{f.smoothed}{List containing smoothed log-concave density estimator, as output by \code{\link{logconSmoothed}}.}
+\item{f.smoothed}{List containing smoothed log-concave density estimator, as output by \code{\link{evaluateLogConDens}}.}
 \item{x}{Vector of distinct observations generated from \code{x0}.}
 \item{w}{Weights corresponding to \code{x}.}
 }
@@ -36,7 +35,7 @@ Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.c
 ## Generate random samples as described in Section 3 of
 ## Duembgen and Rufibach (2009)
 ## ===================================================
-x0 <- sort(rnorm(111))
+x0 <- rnorm(111)
 n <- 22
 random <- rlogcon(n, x0)
 

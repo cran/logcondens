@@ -1,6 +1,4 @@
-LocalF <-
-function (x, phi) 
-{
+LocalF <- function(x, phi){
     n <- length(x)
     Fhat <- 1:n * 0
     dx <- diff(x)
