@@ -2,7 +2,8 @@ robust <- function(x, w, eta, etanew, grad){
     dx <- c(0, diff(x))
     loglik <- Lhat_eta(x, w, eta)$ll
     liknew <- Lhat_eta(x, w, etanew)$ll
-    dirder <- as.numeric(t(grad) %*% (etanew - eta))
+    #dirder <- as.numeric(t(grad) %*% (etanew - eta))
+    dirder <- crossprod(grad, etanew - eta)
     iter <- 0
     
     while ((liknew < loglik) && (iter < 20)){

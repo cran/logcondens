@@ -13,8 +13,8 @@ intF <- function (s, res){
         intF.xi <- c(0, rep(NA, n - 1))
 
         for (i in 2:n){
-            if (abs(slope[i]) <= 10^(-6)){inte <- f[i - 1] * dx[i] / 2}
-            if (abs(slope[i]) > 10^(-6)){inte <- slope[i] ^ (-1) * (J00(phi[i - 1], phi[i], 1) - f[i - 1])}
+            if (abs(slope[i]) <= 1e-6){inte <- f[i - 1] * dx[i] / 2}
+            if (abs(slope[i]) > 1e-6){inte <- slope[i] ^ (-1) * (J00(phi[i - 1], phi[i], 1) - f[i - 1])}
             intF.xi[i] <- dx[i] * (Fhat[i - 1] + inte)
             }
 
@@ -26,10 +26,10 @@ intF <- function (s, res){
             j <- min(j, n - 1)
             xj <- x[j]
             
-            if (abs(slope[j + 1]) <= 10^(-6)){
+            if (abs(slope[j + 1]) <= 1e-6){
                   tmp <- f[j] * (x0 - xj) ^ 2 / 2}
             
-            if (abs(slope[j + 1]) > 10^(-6)){
+            if (abs(slope[j + 1]) > 1e-6){
                   tmp <- dx[j + 1] * (slope[j + 1] ^ (-1) * J00(phi[j], 
                     phi[j + 1], (x0 - xj) / dx[j + 1]) - (x0 - xj) / dphi[j + 1] * f[j])
                     }

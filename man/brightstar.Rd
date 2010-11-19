@@ -24,10 +24,27 @@ Hoffleit, D., Warren, W.H. (1991).
 \emph{The Bright Star Catalog.}
 Yale University Observatory, New Heaven.  
 
-Mizera, I., Koenker, R. (2009).
-\emph{Quasi-concave density estimation.}
-Preprint.
+Mizera, I., Koenker, R. (2010).
+Quasi-concave density estimation.
+\emph{Ann. Statist.}, \bold{38(5)}, 2998--3027. 
+}
+\examples{
+# ---- load rotational velocity data ----
+data(brightstar)
+
+# ---- compute and plot log-concave estimate ----
+# See also Figure 3 in Koenker & Mizera (2009)
+x0 <- sort(brightstar[, 3])
+res <- logConDens(x0, print = FALSE, smoothed = FALSE)
+plot(res, which = "density")
 }
 \keyword{datasets}
+
+
+
+
+
+
+
 
 

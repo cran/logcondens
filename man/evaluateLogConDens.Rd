@@ -3,18 +3,18 @@
 \title{Evaluates the Log-Density MLE and Smoothed Estimator at Arbitrary Real Numbers xs}
 \description{Based on the output of \code{\link{activeSetLogCon}}, this function computes the values of  
 
-\deqn{\widehat \varphi_m(t)}
-\deqn{\widehat f_m(t) = \exp(\widehat \varphi_m(t))}
-\deqn{\widehat F_m(t) = \int_{x_1}^t \exp(\widehat \varphi_m(x)) dx}
-\deqn{\widehat f_m^*(t) = \exp(\widehat \varphi_m^*(t))}
-\deqn{\widehat F_m^*(t) = \int_{x_1}^t \exp(\widehat \varphi_m^*(x)) dx}
+\deqn{\widehat \phi_m(t)}{\hat \phi_m(t)}
+\deqn{\widehat f_m(t) = \exp(\widehat \phi_m(t))}{\hat f_m(t) = exp(\hat \phi_m(t))}
+\deqn{\widehat F_m(t) = \int_{x_1}^t \exp(\widehat \phi_m(x)) dx}{\hat F_m(t) = int_{x_1}^t exp(\hat \phi_m(x)) dx}
+\deqn{\widehat f_m^*(t) = \exp(\widehat \phi_m^*(t))}{\hat f_m^*(t) = exp(\hat \phi_m^*(t))}
+\deqn{\widehat F_m^*(t) = \int_{x_1}^t \exp(\widehat \phi_m^*(x)) dx}{\hat F_m^*(t) = int_{x_1}^t \exp(\hat \phi_m^*(x)) dx}
 
-at all real number \eqn{t} in \code{xs}. The exact formula for \eqn{\widehat F_m} and \eqn{t \in [x_j,x_{j+1}]} is
+at all real number \eqn{t} in \code{xs}. The exact formula for \eqn{\widehat F_m}{\hat F_m} and \eqn{t \in [x_j,x_{j+1}]} is
 
-\deqn{\widehat F_m(t)  = \widehat F_m(x_j)  + (x_{j+1}-x_j) J\Big(\widehat \varphi_j, \widehat \varphi_{j+1}, \frac{t-x_j}{x_{j+1}-x_j} \Big) }
+\deqn{\widehat F_m(t)  = \widehat F_m(x_j)  + (x_{j+1}-x_j) J\Big(\widehat \phi_j, \widehat \phi_{j+1}, \frac{t-x_j}{x_{j+1}-x_j} \Big)}{\hat F_m(t)  = \hat F_m(x_j)  + (x_{j+1}-x_j) J(\hat \phi_j, \hat \phi_{j+1}, (t-x_j)/(x_{j+1}-x_j))}
 
-for the function \eqn{J} introduced in \code{\link{Jfunctions}}. Closed formulas can also be given for \eqn{\widehat f_m^*(t)}
-and \eqn{\widehat F_m^*(t)}.
+for the function \eqn{J} introduced in \code{\link{Jfunctions}}. Closed formulas can also be given for \eqn{\widehat f_m^*(t)}{\hat f_m^*(t)}
+and \eqn{\widehat F_m^*(t)}{\hat F_m^*(t)}.
 }
 \usage{evaluateLogConDens(xs, res, which = 1:5, gam = NULL, print = FALSE)}
 \arguments{
@@ -23,10 +23,10 @@ and \eqn{\widehat F_m^*(t)}.
   \item{which}{A (sub-)vector of \code{1:5} specifying which of the above quantities should be computed.}
   \item{gam}{Only necessary if \code{smoothed = TRUE}. The standard deviation of the normal kernel. If equal to 
             \code{NULL}, \code{gam} is chosen such that the variances of the original sample \eqn{x_1, \ldots, x_n} 
-            and \eqn{\widehat f_n^*} coincide. See \code{\link{logConDens}} for details.}
+            and \eqn{\widehat f_n^*}{\hat f_n^*} coincide. See \code{\link{logConDens}} for details.}
   \item{print}{Progress in computation of smooth estimates is shown.}
 }
-\value{Matrix with rows \eqn{(x_{0, i}, \widehat \varphi_m(x_{0, i}), \widehat f_m(x_{0, i}), \widehat F_m(x_{0, i}), \widehat f_m^*(x_{0, i}), \widehat F_m^*(x_{0, i}))}
+\value{Matrix with rows \eqn{(x_{0, i}, \widehat \phi_m(x_{0, i}), \widehat f_m(x_{0, i}), \widehat F_m(x_{0, i}), \widehat f_m^*(x_{0, i}), \widehat F_m^*(x_{0, i}))}{(x_{0, i}, \hat \phi_m(x_{0, i}), \hat f_m(x_{0, i}), \hat F_m(x_{0, i}), \hat f_m^*(x_{0, i}), \hat F_m^*(x_{0, i}))}
 where \eqn{x_{0,i}} is the \eqn{i}-th entry of \code{xs}.}
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 

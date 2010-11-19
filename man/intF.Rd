@@ -4,18 +4,18 @@
 \description{Based on an object of class \code{dlc} as output by the function \code{\link{logConDens}}, 
 this function gives values of 
 
-\deqn{\widehat I(t) = \int_{x_1}^t \widehat{F}(r) d r}
+\deqn{\widehat I(t) = \int_{x_1}^t \widehat{F}(r) d r}{\hat I(t) = \int_{x_1}^t \hat{F}(r) d r}
 
-at all numbers in \eqn{\bold{s}}. Note that \eqn{t} (so all elements in \eqn{\bold{s}}) must lie in 
+at all numbers in \eqn{\bold{s}}{s}. Note that \eqn{t} (so all elements in \eqn{\bold{s}}{s}) must lie in 
 \eqn{[x_1,x_m]}. The exact formula for \eqn{\widehat I(t)} is
 
-\deqn{\widehat I(t)  = \Bigl(\sum_{i=1}^{i_0} \widehat{I}_i(x_{i+1})\Bigr)+\widehat{I}_{i_0}(t) }
+\deqn{\widehat I(t)  = \Bigl(\sum_{i=1}^{i_0} \widehat{I}_i(x_{i+1})\Bigr)+\widehat{I}_{i_0}(t)}{\hat I(t) = (\sum_{i=1}^{i_0} \hat{I}_i(x_{i+1}))+\hat{I}_{i_0}(t)}
 
-where \eqn{i_0 = \ }min\eqn{\{ m-1 \,  , \ \{i \ : \ x_i \le t \} \} } and
+where \eqn{i_0 = }min\eqn{\{m-1 \, , \ \{i \ : \ x_i \le t \}\}}{{m-1, {i : x_i \le t}}} and
 
-\deqn{I_j(x) = \int_{x_j}^x \widehat{F}(r) d r = (x-x_j)\widehat{F}(x_j)+\Delta x_{j+1}\Bigl(\frac{\Delta x_{j+1}}{\Delta \widehat\varphi_{j+1}}J\Bigl(\widehat\varphi_j,\widehat\varphi_{j+1}, \frac{x-x_j}{\Delta x_{j+1}}\Bigr)-\frac{\widehat f(x_j)(x-x_j)}{\Delta \widehat \varphi_{j+1}}\Bigr)}
+\deqn{I_j(x) = \int_{x_j}^x \widehat{F}(r) d r = (x-x_j)\widehat{F}(x_j)+\Delta x_{j+1}\Bigl(\frac{\Delta x_{j+1}}{\Delta \widehat\phi_{j+1}}J\Bigl(\widehat\phi_j,\widehat\phi_{j+1}, \frac{x-x_j}{\Delta x_{j+1}}\Bigr)-\frac{\widehat f(x_j)(x-x_j)}{\Delta \widehat \phi_{j+1}}\Bigr)}{I_j(x) = int_{x_j}^x \hat{F}(r) d r = (x-x_j)\hat{F}(x_j)+\Delta x_{j+1}((\Delta x_{j+1})/(\Delta \hat\phi_{j+1})J(\hat\phi_j, \hat \phi_{j+1}, (x-x_j)/(\Delta x_{j+1}))-(\hat f(x_j)(x-x_j))/(\Delta \hat \phi_{j+1}))}
 
-for \eqn{x \in [x_j, x_{j+1}], \ j = 1,\ldots,m-1}, \eqn{\Delta v_{i+1} = v_{i+1}-v_i} for any vector \eqn{\bold{v}}
+for \eqn{x \in [x_j, x_{j+1}], \ j = 1,\ldots, m-1}{x \in [x_j, x_{j+1}], j = 1, \ldots, m-1}, \eqn{\Delta v_{i+1} = v_{i+1} - v_i} for any vector \eqn{\bold{v}}{v}
 and the function \eqn{J} introduced in \code{\link{Jfunctions}}.
 
 }
@@ -24,7 +24,8 @@ and the function \eqn{J} introduced in \code{\link{Jfunctions}}.
   \item{s}{Vector of real numbers where the functions should be evaluated at.}
   \item{res}{An object of class \code{"dlc"}, usually a result of a call to \code{logConDens}.}
 }
-\value{Vector of the same length as \eqn{\bold{s}}, containing the values of \eqn{\widehat I} at the elements of \eqn{\bold{s}}.}
+\value{Vector of the same length as \eqn{\bold{s}}, containing the values of \eqn{\widehat I} at the elements of 
+\eqn{\bold{s}}{s}.}
 
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
@@ -39,6 +40,10 @@ on the empirical distribution function.
 Duembgen, L. and Rufibach, K. (2009)
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 \emph{Bernoulli}, \bold{15(1)}, 40--68.  
+
+Duembgen, L. and Rufibach, K. (2010)
+logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
+\emph{Journal of Statistical Software}, to appear.  
 
 Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.

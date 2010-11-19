@@ -30,6 +30,10 @@ nature only. It may fail for very large sample sizes.}
 Duembgen, L. and Rufibach, K. (2009)
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 \emph{Bernoulli}, \bold{15(1)}, 40--68.  
+
+Duembgen, L. and Rufibach, K. (2010)
+logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
+\emph{Journal of Statistical Software}, to appear.  
 }
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
@@ -61,8 +65,10 @@ abline(h = d$test.stat[1], lty = 2, col = 3)
 xs <- seq(min(res1$xs, res2$xs), max(res1$xs, res2$xs), length = 200)
 F1smooth <- matrix(NA, nrow = length(xs), ncol = 2); F2smooth <- F1smooth
 for (i in 1:length(xs)){
-    F1smooth[i, ] <- evaluateLogConDens(xs[i], res1, which = 4:5)[, c("smooth.density", "smooth.CDF")]
-    F2smooth[i, ] <- evaluateLogConDens(xs[i], res2, which = 4:5)[, c("smooth.density", "smooth.CDF")]
+    F1smooth[i, ] <- evaluateLogConDens(xs[i], res1, which = 4:5)[, 
+        c("smooth.density", "smooth.CDF")]
+    F2smooth[i, ] <- evaluateLogConDens(xs[i], res2, which = 4:5)[, 
+        c("smooth.density", "smooth.CDF")]
     }
 plot(xs, abs(F1smooth[, 2] - F2smooth[, 2]), type = "l")
 abline(h = 0)

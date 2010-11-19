@@ -10,6 +10,10 @@
 Duembgen, L. and Rufibach, K. (2009)
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 \emph{Bernoulli}, \bold{15(1)}, 40--68.  
+
+Duembgen, L. and Rufibach, K. (2010)
+logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
+\emph{Journal of Statistical Software}, to appear.  
 }
 \seealso{See the example in \code{\link{logConDens}} for the analysis of this data.}
 \keyword{datasets}

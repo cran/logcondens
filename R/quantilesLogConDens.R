@@ -1,5 +1,7 @@
 quantilesLogConDens <- function(ps, res){
 
+    if (any(ps < 0 | ps > 1)){stop("All entries of the argument ps given to quantilesLogConDens() must be in [0, 1]!\n")}
+
     x <- res$x
     phi <- res$phi
     Fhat <- res$Fhat
@@ -10,9 +12,8 @@ quantilesLogConDens <- function(ps, res){
 
         p0 <- ps[i]
     
-        if (p0 <= 0){q <- -Inf}
+        if (p0 == 0){q <- -Inf}
         if (p0 == 1){q <- x[n]}
-        if (p0 >  1){q <- Inf}
     
         if ((p0 > 0) && (p0 < 1)){
             n <- length(x)

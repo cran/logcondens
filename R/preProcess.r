@@ -45,7 +45,7 @@ preProcess <- function(x, xgrid = NULL){
         # Finally, reduce xx and ww such that
         # all weights ww[i] are clearly positive:
         
-        tmp <- (ww > 10 ^ (-7) / n)
+        tmp <- (ww > 1e-7 / n)
         xx <- xx[tmp]
         ww <- ww[tmp]
         ww <- ww / sum(ww)

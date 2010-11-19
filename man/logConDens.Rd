@@ -10,7 +10,7 @@
   \item{smoothed}{If \code{TRUE}, the smoothed version of the log-concave density estimator is also computed.}
   \item{print}{\code{print = TRUE} outputs the log-likelihood in every loop, \code{print = FALSE} does not. Make sure to tell \code{R} to output (press CTRL+W).}
   \item{gam}{Only necessary if \code{smoothed = TRUE}. The standard deviation of the normal kernel. If equal to \code{NULL}, \code{gam} is chosen
-             such that the variances of the original sample \eqn{x_1, \ldots, x_n} and \eqn{\widehat f_n^*} coincide.}
+             such that the variances of the original sample \eqn{x_1, \ldots, x_n} and \eqn{\widehat f_n^*}{\hat f_n^*} coincide.}
   \item{xs}{Only necessary if \code{smoothed = TRUE}. Either provide a vector of support points where the smoothed estimator should be computed at, or
   leave as \code{NULL}. Then, a sufficiently width equidistant grid of points will be used.}
 }
@@ -28,13 +28,17 @@ The methods \code{\link{summary.dlc}} and \code{\link{plot.dlc}} are used to obt
 density.
 }
 \references{
-Duembgen, L, Huesler, A. and Rufibach, K. (2007).
+Duembgen, L, Huesler, A. and Rufibach, K. (2010).
 Active set and EM algorithms for log-concave densities based on complete and censored data. 
 Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
 
 Duembgen, L. and Rufibach, K. (2009).
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 \emph{Bernoulli}, \bold{15(1)}, 40--68.  
+
+Duembgen, L. and Rufibach, K. (2010)
+logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
+\emph{Journal of Statistical Software}, to appear.  
 }
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
@@ -56,6 +60,11 @@ summary(res)
 plot(res, which = "density", legend.pos = "topright")
 plot(res, which = "log-density")
 plot(res, which = "CDF")
+
+## Compute slopes and intercepts of the linear functions that 
+## compose phi
+slopes <- diff(res$phi) / diff(res$x)
+intercepts <- -slopes * res$x[-n] + res$phi[-n]
 
 
 ## ===================================================

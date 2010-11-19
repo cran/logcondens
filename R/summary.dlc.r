@@ -25,7 +25,7 @@ summary.dlc <- function(object, ...){
 
     p3 <- paste("\nNumber of knots of the MLE: ", sum(object$IsKnot), "\n", sep = "")
 
-    p4 <- paste("\nKnots of the MLE:\nx[", vectorToString(knots, ", "), "] =\n", vectorToString(format(x[object$IsKnot == 1], digits = 2), ","), "\n\n", sep = "")
+    p4 <- paste("\nKnots of the MLE:\nx[", paste(knots, collapse = ", "), "] =\n", paste(format(x[object$IsKnot == 1], digits = 2), collapse = ", "), "\n\n", sep = "")
 
     if (object$smoothed == FALSE){cat(p, pn, p0, pw, p1, p2, p3, p4)}
 

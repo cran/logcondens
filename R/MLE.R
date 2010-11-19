@@ -1,4 +1,4 @@
-MLE <- function (x, w = NA, phi_o = NA, prec = 10^(-7), print = FALSE){
+MLE <- function (x, w = NA, phi_o = NA, prec = 1e-7, print = FALSE){
     n <- length(x)
     if (sum(x[2:n] <= x[1:n - 1]) > 0){cat("We need strictly increasing numbers x(i)!\n")}
     if (max(is.na(w)) == 1){w <- rep(1/n, n)}
@@ -6,7 +6,7 @@ MLE <- function (x, w = NA, phi_o = NA, prec = 10^(-7), print = FALSE){
 
     ww <- w/sum(w)
 
-    if (max(is.na(phi_o)) == 1){
+    if (any(is.na(phi_o))){
         m <- sum(ww * x)
         s2 <- sum(ww * (x - m)^2)
         phi <- LocalNormalize(x, -(x - m)^2/(2 * s2))

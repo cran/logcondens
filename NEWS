@@ -1,7 +1,13 @@
+logcondens_2.0.1:
+---------------------------------
+- Revision according to reviewer comments for JSS paper.
+- Replaced 'vectorToString()' by 'paste()' using option 'collapse'
+- Added JSS paper as a vignette to the package
+
 logcondens_2.0.0:
 ---------------------------------
-- New version according to revision of JSS paper.
-- Updated Taylor approximations according to technical report.
+- Substantially reworked version according to revision of paper Duembgen and Rufibach (2010).
+- Updated Taylor approximations according to technical report Duembgen et al (2010).
 
 logcondens_1.3.5:
 ---------------------------------
@@ -11,7 +17,7 @@ logcondens_1.3.5:
 
 logcondens_1.3.4:
 ---------------------------------
-- Properly included vignette in the package.
+- Included vignette in the package.
 
 logcondens_1.3.3:
 ---------------------------------

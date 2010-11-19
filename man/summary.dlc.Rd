@@ -14,13 +14,17 @@ log-concave density as well as of its smoothed version (depending on the value o
 \code{\link{logConDens}}).}
 \section{Warning}{Note that the numbering of knots in the output relies on the vector of \emph{unique} observations.}
 \references{
-Duembgen, L, Huesler, A. and Rufibach, K. (2007).
+Duembgen, L, Huesler, A. and Rufibach, K. (2010).
 Active set and EM algorithms for log-concave densities based on complete and censored data. 
 Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
 
 Duembgen, L. and Rufibach, K. (2009).
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 \emph{Bernoulli}, \bold{15(1)}, 40--68.  
+
+Duembgen, L. and Rufibach, K. (2010)
+logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
+\emph{Journal of Statistical Software}, to appear.  
 }
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 

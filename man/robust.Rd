@@ -5,7 +5,7 @@
 \usage{robust(x, w, eta, etanew, grad)}
 \arguments{
   \item{x}{Vector of independent and identically distributed numbers, with strictly increasing entries.}
-  \item{w}{Optional vector of nonnegative weights corresponding to \eqn{{\bold{x}_m}}.}
+  \item{w}{Optional vector of nonnegative weights corresponding to \eqn{{\bold{x}_m}}{x_m}.}
   \item{eta}{Current candidate vector.}
   \item{etanew}{New candidate vector.}
   \item{grad}{Gradient of L at current candidate vector \eqn{\eta.}}
@@ -27,6 +27,7 @@ Computing maximum likelihood estimators of a log-concave density function.
 \emph{J. Stat. Comput. Simul.} \bold{77}, 561--574.
 }
 
+\note{This function is not intended to be invoked by the end user.}
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
 

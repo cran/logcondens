@@ -1,5 +1,5 @@
 qloglin <- function(u, t){
-    if (abs(t) > 10 ^ (-6)){
+    if (abs(t) > 1e-6){
         z <- log(1 + ((exp(t) - 1) * u)) / t} else {
         z <- u + t * u * (1 - u) / 2}
     return(z)

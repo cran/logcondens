@@ -14,11 +14,11 @@
 \item{x}{Vector of unique and sorted observations deduced from the input \code{x} according to the specification 
 given by \code{xgrid}.}
 \item{w}{Vector of corresponding weights, normalized to sum to one.}
-\item{sig}{Standard deviation of the inputed weights. This quantity is needed when computing the smoothed
+\item{sig}{Standard deviation of the inputed observations. This quantity is needed when computing the smoothed
 log-concave density estimator via \code{\link{evaluateLogConDens}}.}
 \item{n}{Number of initial observations.}
 }
-
+\note{This function is not intended to be invoked by the end user.}
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
 

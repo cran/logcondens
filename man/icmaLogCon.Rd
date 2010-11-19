@@ -1,21 +1,23 @@
 \name{icmaLogCon}
 \alias{icmaLogCon}
 \title{Computes a Log-Concave Probability Density Estimate via an Iterative Convex Minorant Algorithm}
-\description{Given a vector of observations \eqn{{\bold{x}_n} = (x_1, \ldots, x_n)} with not necessarily equal entries, 
-\code{\link{activeSetLogCon}} first computes vectors \eqn{{\bold{x}_m} = (x_1, \ldots, x_m)} and
-\eqn{{\bold{w}} = (w_1, \ldots, w_m)} where \eqn{w_i} is the weight of each \eqn{x_i} s.t. 
+\description{Given a vector of observations \eqn{{\bold{x}_n} = (x_1, \ldots, x_n)}{x_n = (x_1, \ldots, x_n)} 
+with not necessarily equal entries, 
+\code{\link{activeSetLogCon}} first computes vectors \eqn{{\bold{x}_m} = (x_1, \ldots, x_m)}{x_m = (x_1, \ldots, x_m)} and
+\eqn{{\bold{w}} = (w_1, \ldots, w_m)}{w = (w_1, \ldots, w_m)} where \eqn{w_i} is the weight of each \eqn{x_i} s.t. 
 \eqn{sum_{i=1}^m w_i = 1}.
 Then, \code{\link{activeSetLogCon}} computes a concave, piecewise 
-linear function \eqn{\widehat \varphi_m} on \eqn{[x_1, x_m]} with knots only in \eqn{\{x_1, \ldots, x_m\}} such that 
+linear function \eqn{\widehat \phi_m} on \eqn{[x_1, x_m]} with knots only in \eqn{\{x_1, \ldots, x_m\}}{{x_1, \ldots, x_m}} such that 
   
-  \deqn{L(\varphi) = \sum_{i=1}^m w_i \varphi(x_i) - \int_{-\infty}^\infty \exp(\varphi(t)) dt}
+  \deqn{L(\phi) = \sum_{i=1}^m w_i \phi(x_i) - \int_{-\infty}^\infty \exp(\phi(t)) dt}{L(\phi) = \sum_{i=1}^m w_i \phi(x_i) - \int_{-\infty}^\infty exp(\phi(t)) dt}
   
   is maximal. In order to be able to apply the pool - adjacent - violaters algorithm, computations are performed
   in the parametrization
   
-  \deqn{{\bold{\eta}}({\bold{\varphi}}) = \Bigl(\varphi_1, \Bigl(\eta_1 + \sum_{j=2}^i (x_i-x_{i-1})\eta_i\Bigr)_{i=2}^m \Bigr).} 
+  \deqn{{\bold{\eta}}({\bold{\phi}}) = \Bigl(\phi_1, \Bigl(\eta_1 + \sum_{j=2}^i (x_i-x_{i-1})\eta_i\Bigr)_{i=2}^m \Bigr).}{\eta(\phi) = (\phi_1, (\eta_1 + \sum_{j=2}^i (x_i-x_{i-1})\eta_i)_{i=2}^m ).}
   
-  To find the maximum of \eqn{L}, a variant of the iterative convex minorant using the pool - adjacent - violaters algorithm is used.}
+  To find the maximum of \eqn{L}, a variant of the iterative convex minorant using the pool - adjacent - violaters 
+  algorithm is used.}
 \usage{icmaLogCon(x, xgrid = NULL, eps = 10^-8, T1 = 2000, 
     robustif = TRUE, print = FALSE)}
 \arguments{
@@ -26,14 +28,15 @@ linear function \eqn{\widehat \varphi_m} on \eqn{[x_1, x_m]} with knots only in 
   \item{robustif}{\code{robustif = TRUE} performs the robustification and Hermite interpolation procedure detailed in 
                 Rufibach (2006, 2007), \code{robustif = FALSE} does not. In the latter case, convergence of the algorithm
                 is no longer guaranteed.}
-  \item{print}{\code{print = TRUE} outputs log-likelihood in every loop, \code{print = FALSE} does not. Make sure to tell \code{R} to output (press CTRL+W).}
+  \item{print}{\code{print = TRUE} outputs log-likelihood in every loop, \code{print = FALSE} does not. Make sure to 
+  tell \code{R} to output (press CTRL+W).}
 }
 \value{
   \item{x}{Vector of observations \eqn{x_1, \ldots, x_m} that was used to estimate the density. }
   \item{w}{The vector of weights that had been used. Depends on the chosen setting for \code{xgrid}.}
   \item{f}{Vector with entries \eqn{\widehat f_m(x_i).}}
   \item{xn}{Vector with initial observations \eqn{x_1, \ldots, x_n}.}  
-  \item{Loglik}{The value \eqn{L(\widehat \varphi_m)} of the log-likelihood-function \eqn{L} at the maximum \eqn{\widehat \varphi_m.}}
+  \item{Loglik}{The value \eqn{L(\widehat \phi_m)} of the log-likelihood-function \eqn{L} at the maximum \eqn{\widehat \phi_m.}}
   \item{Iterations}{Number of iterations performed.}
   \item{sig}{The standard deviation of the initial sample \eqn{x_1, \ldots, x_n}.}
 }

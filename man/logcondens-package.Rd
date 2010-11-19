@@ -23,8 +23,8 @@ For the computation of a log-concave estimate in any dimension the package \pkg{
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 2.0.0 \cr
-Date: \tab 2010-08-26 \cr
+Version: \tab 2.0.1 \cr
+Date: \tab 2010-11-19 \cr
 License: \tab GPL (>=2) \cr
 }
 
@@ -66,21 +66,25 @@ Kaspar Rufibach gratefully acknowledges support by the Swiss National Science Fo
 
 MatLab code with an implementation of the active set algorithm is available on request from Lutz Duembgen.}
 \references{
+Duembgen, L., Huesler, A. and Rufibach, K. (2010)
+Active set and EM algorithms for log-concave densities based on complete and censored data.
+Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
+
 Duembgen, L. and Rufibach, K. (2009)
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 \emph{Bernoulli}, \bold{15(1)}, 40--68.  
 
-Duembgen, L., Huesler, A. and Rufibach, K. (2010)
-Active set and EM algorithms for log-concave densities based on complete and censored data.
-Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
+Duembgen, L. and Rufibach, K. (2010)
+logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
+\emph{Journal of Statistical Software}, to appear.  
 
 Hoffleit, D., Warren, W.H. (1991).
 \emph{The Bright Star Catalog.}
 Yale University Observatory, New Heaven.  
 
-Mizera, I., Koenker, R. (2009).
-\emph{Quasi-concave density estimation.}
-Preprint.
+Mizera, I., Koenker, R. (2010).
+Quasi-concave density estimation.
+\emph{Ann. Statist.}, \bold{38(5)}, 2998--3027. 
 
 Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.

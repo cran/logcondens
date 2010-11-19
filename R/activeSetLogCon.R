@@ -1,13 +1,28 @@
-activeSetLogCon <- function(x, xgrid = NULL, print = FALSE){
+activeSetLogCon <- function(x, xgrid = NULL, print = FALSE, w = NA){
 
-    prec <- 10^(-10)
-
+    prec <- 1e-10
     xn <- sort(x)
     
-    tmp <- preProcess(x, xgrid = xgrid)
-    x <- tmp$x
-    w <- tmp$w
-    sig <- tmp$sig
+    if ((!identical(xgrid, NULL) & (!identical(w, NA)))){stop("If w != NA then xgrid must be NULL!\n")}  
+    
+    if (identical(w, NA)){
+        tmp <- preProcess(x, xgrid = xgrid)
+        x <- tmp$x
+        w <- tmp$w
+        sig <- tmp$sig
+        }
+        
+    if (!identical(w, NA)){
+        tmp <- cbind(x, w)
+        tmp <- tmp[order(x), ]
+        x <- tmp[, 1]
+        w <- tmp[, 2]
+        
+        est.m <- sum(w * x)
+        est.sd <- sum(w * (x - est.m) ^ 2)
+        est.sd <- sqrt(est.sd * length(x) / (length(x) - 1))
+        sig <- est.sd
+    }
 
     n <- length(x)    
     phi <- LocalNormalize(x, 1:n * 0)
@@ -51,9 +66,12 @@ activeSetLogCon <- function(x, xgrid = NULL, print = FALSE){
         conv <- conv_new
         if (sum(IsKnot != IsKnot_old) == 0){break}
         if (print == TRUE){
-            print(paste("iter1 = ", iter1 - 1, " / L = ", round(L, 4), " / max(H) = ", round(max(H), 4), " / #knots = ", sum(IsKnot), sep = ""))
+            print(paste("iter1 = ", iter1 - 1, " / L = ", round(L, 4), " / max(H) = ", round(max(H), 4), " / #knots = ", 
+            sum(IsKnot), sep = ""))
         }
     }
     Fhat <- LocalF(x, phi)
-    return(list(xn = xn, x = x, w = w, phi = as.vector(phi), IsKnot = IsKnot, L = L, Fhat = as.vector(Fhat), H = as.vector(H), n = length(xn), m = n, knots = x[(1:n)[IsKnot == 1]], mode = x[phi == max(phi)], sig = sig))
+    res <- list(xn = xn, x = x, w = w, phi = as.vector(phi), IsKnot = IsKnot, L = L, Fhat = as.vector(Fhat), 
+        H = as.vector(H), n = length(xn), m = n, knots = x[IsKnot == 1], mode = x[phi == max(phi)], sig = sig)
+    return(res)
 }
