@@ -1,3 +1,8 @@
+logcondens_2.0.2:
+---------------------------------
+- Added functions ROCx() and logConROC()
+- Added dataset 'pancreas'
+
 logcondens_2.0.1:
 ---------------------------------
 - Revision according to reviewer comments for JSS paper.

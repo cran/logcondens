@@ -4,7 +4,7 @@
 %% declarations for jss.cls %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\VignetteIndexEntry{A guide to the reporttools package}                                          
+%\VignetteIndexEntry{logcondens: Computations Related to Univariate Log-Concave Density Estimation (Duembgen and Rufibach, 2010, Journal of Statistical Software)}                                          
 %\VignetteKeywords{logcondens}                                                                   
 %\VignetteDepends{logcondens}                                      
 %\VignettePackage{logcondens} 
@@ -124,6 +124,7 @@ Maximum likelihood estimation of a log-concave density has attracted considerabl
 \newcommand{\SupN}[1]{\Vert #1 \Vert_\infty}  
 
 \SweaveOpts{keep.source = TRUE}
+\SweaveOpts{prefix.string = plots/}
 
 <<label = init, echo = FALSE>>=
 options(prompt = "R> ", continue = "+  ", width = 75, digits = 4)
@@ -136,6 +137,7 @@ set.seed(1)
 n.sim <- 40
 x.sim <- sort(rnorm(n.sim))
 @ 
+
 
 
 
