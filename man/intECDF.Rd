@@ -34,9 +34,9 @@ Duembgen, L. and Rufibach, K. (2009)
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 \emph{Bernoulli}, \bold{15(1)}, 40--68.  
 
-Duembgen, L. and Rufibach, K. (2010)
+Duembgen, L. and Rufibach, K. (2011)
 logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
-\emph{Journal of Statistical Software}, to appear.  
+\emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \url{http://www.jstatsoft.org/v39/i06}
 
 Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.

@@ -1,3 +1,7 @@
+logcondens_2.0.3:
+---------------------------------
+- Contains final JSS paper version.
+
 logcondens_2.0.2:
 ---------------------------------
 - Added functions ROCx() and logConROC()

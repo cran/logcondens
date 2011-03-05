@@ -2,10 +2,10 @@
 %Å‚Å„ÅœÅ”\r
 1 0 obj
 <<
-/CreationDate (D:20110224095505)
-/ModDate (D:20110224095505)
+/CreationDate (D:20110305205319)
+/ModDate (D:20110305205319)
 /Title (R Graphics Output)
-/Producer (R 2.12.1)
+/Producer (R 2.12.2)
 /Creator (R)
 >>
 endobj
@@ -29,7 +29,7 @@ endobj
 >>
 stream
 1 J 1 j q
-Q q 0.00 0.00 360.00 604.80 re W n
+Q q
 0.000 0.000 0.000 RG
 0.75 w
 [] 0 d
@@ -161,7 +161,7 @@ BT
 /F2 1 Tf 8.00 0.00 -0.00 8.00 68.42 536.28 Tm [(K) 40 (olmogoro) 15 (v-Smir) -25 (no) 15 (v)] TJ
 ET
 Q q 42.77 244.37 307.73 139.82 re W n
-Q q 0.00 0.00 360.00 604.80 re W n
+Q q
 0.000 0.000 0.000 RG
 0.75 w
 [] 0 d
@@ -273,7 +273,7 @@ Q q 42.77 244.37 307.73 139.82 re W n
 42.77 256.02 m 350.50 256.02 l S
 42.77 249.55 m 350.50 249.55 l S
 Q q 42.77 42.77 307.73 139.82 re W n
-Q q 0.00 0.00 360.00 604.80 re W n
+Q q
 0.000 0.000 0.000 RG
 0.75 w
 [] 0 d
@@ -391,7 +391,7 @@ Q
 endstream
 endobj
 7 0 obj
-8788
+8695
 endobj
 3 0 obj
 <<
@@ -414,9 +414,7 @@ endobj
 <<
 /Type /Encoding
 /BaseEncoding /WinAnsiEncoding
-/Differences [ 45/minus 96/quoteleft
-144/dotlessi /grave /acute /circumflex /tilde /macron /breve /dotaccent
-/dieresis /.notdef /ring /cedilla /.notdef /hungarumlaut /ogonek /caron /space]
+/Differences [ 45/minus ]
 >>
 endobj
 9 0 obj <<
@@ -437,14 +435,14 @@ xref
 0000000000 65535 f 
 0000000021 00000 n 
 0000000164 00000 n 
-0000009154 00000 n 
-0000009237 00000 n 
+0000009061 00000 n 
+0000009144 00000 n 
 0000000213 00000 n 
 0000000293 00000 n 
-0000009134 00000 n 
-0000009329 00000 n 
-0000009586 00000 n 
-0000009682 00000 n 
+0000009041 00000 n 
+0000009236 00000 n 
+0000009330 00000 n 
+0000009426 00000 n 
 trailer
 <<
 /Size 11
@@ -452,5 +450,5 @@ trailer
 /Root 2 0 R
 >>
 startxref
-9760
+9504
 %%EOF

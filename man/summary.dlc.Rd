@@ -22,9 +22,9 @@ Duembgen, L. and Rufibach, K. (2009).
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 \emph{Bernoulli}, \bold{15(1)}, 40--68.  
 
-Duembgen, L. and Rufibach, K. (2010)
+Duembgen, L. and Rufibach, K. (2011)
 logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
-\emph{Journal of Statistical Software}, to appear.  
+\emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \url{http://www.jstatsoft.org/v39/i06}
 }
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 

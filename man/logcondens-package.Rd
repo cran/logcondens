@@ -23,8 +23,8 @@ For the computation of a log-concave estimate in any dimension the package \pkg{
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 2.0.2 \cr
-Date: \tab 2011-02-23 \cr
+Version: \tab 2.0.3 \cr
+Date: \tab 2011-03-05 \cr
 License: \tab GPL (>=2) \cr
 }
 
@@ -81,9 +81,9 @@ Duembgen, L. and Rufibach, K. (2009)
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 \emph{Bernoulli}, \bold{15(1)}, 40--68.  
 
-Duembgen, L. and Rufibach, K. (2010)
+Duembgen, L. and Rufibach, K. (2011)
 logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
-\emph{Journal of Statistical Software}, to appear.  
+\emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \url{http://www.jstatsoft.org/v39/i06}
 
 Hoffleit, D., Warren, W.H. (1991).
 \emph{The Bright Star Catalog.}

@@ -33,7 +33,7 @@ J20(x, y)}
   \item{v}{Number in \eqn{[0, 1]^d}.}
 }
 \value{Value of the respective function.}
-\note{Taylor approximations are used if \eqn{y-x} is small. We refer to Duembgen et al (2010, Section 6) for 
+\note{Taylor approximations are used if \eqn{y-x} is small. We refer to Duembgen et al (2011, Section 6) for 
 details.
 
 These functions are not intended to be invoked by the end user.}
@@ -42,9 +42,9 @@ Duembgen, L, Huesler, A. and Rufibach, K. (2010)
 Active set and EM algorithms for log-concave densities based on complete and censored data. 
 Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
 
-Duembgen, L. and Rufibach, K. (2010)
+Duembgen, L. and Rufibach, K. (2011)
 logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
-\emph{Journal of Statistical Software}, to appear.  
+\emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \url{http://www.jstatsoft.org/v39/i06}
 }
 
 \author{

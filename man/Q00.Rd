@@ -13,9 +13,9 @@ Q00(x, a, u, v, gamma, QFhat = FALSE)}
   \item{QFhat}{Logical. Should \eqn{Q} be computed?}
 }
 \value{The vector(s) \eqn{q} and/or \eqn{Q}.}
-\note{Taylor approximation is used if \eqn{a} is small. In addition, as described in Duembgen and Rufibach (2010) at
+\note{Taylor approximation is used if \eqn{a} is small. In addition, as described in Duembgen and Rufibach (2011) at
 the end of Appendix C, in extreme situations, e.g. when data sets contain extreme spacings, numerical problems may 
-occur in the computation of the function \eqn{q_\gamma} (eq. (7) in Duembgen and Rufibach, 2010). 
+occur in the computation of the function \eqn{q_\gamma} (eq. (7) in Duembgen and Rufibach, 2011). 
 For it may happen that the exponent is rather large while the difference of Gaussian CDFs is very 
 small. To moderate these problems, we are using the following bounds:
 
@@ -31,9 +31,9 @@ Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biost
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}
 }
 \references{
-Duembgen, L. and Rufibach, K. (2010)
+Duembgen, L. and Rufibach, K. (2011)
 logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
-\emph{Journal of Statistical Software}, to appear.  
+\emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \url{http://www.jstatsoft.org/v39/i06}
 }
 
 
