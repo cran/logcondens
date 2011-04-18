@@ -4,7 +4,7 @@
 %% declarations for jss.cls %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\VignetteIndexEntry{logcondens: Computations Related to Univariate Log-Concave Density Estimation (Duembgen and Rufibach, 2010, Journal of Statistical Software)}                                          
+%\VignetteIndexEntry{logcondens: Computations Related to Univariate Log-Concave Density Estimation (Duembgen and Rufibach, 2011, Journal of Statistical Software, 39(6), 1-28.)}                                          
 %\VignetteKeywords{logcondens}                                                                   
 %\VignetteDepends{logcondens}                                      
 %\VignettePackage{logcondens} 
@@ -28,12 +28,12 @@ Maximum likelihood estimation of a log-concave density has attracted considerabl
 
 %% publication information
 %% NOTE: Typically, this can be left commented and will be filled out by the technical editor
-%% \Volume{13}
-%% \Issue{9}
-%% \Month{September}
-%% \Year{2004}
-%% \Submitdate{2004-09-29}
-%% \Acceptdate{2004-09-29}
+\Volume{39}
+\Issue{6}
+\Month{March}
+\Year{2011}
+\Submitdate{2009-11-12}
+\Acceptdate{2010-10-06}
 
 %% The address of (at least) one author should be given
 %% in the following format:

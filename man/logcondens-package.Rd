@@ -23,8 +23,8 @@ For the computation of a log-concave estimate in any dimension the package \pkg{
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 2.0.3 \cr
-Date: \tab 2011-03-05 \cr
+Version: \tab 2.0.4 \cr
+Date: \tab 2011-04-18 \cr
 License: \tab GPL (>=2) \cr
 }
 
