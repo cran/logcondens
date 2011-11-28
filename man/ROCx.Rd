@@ -16,6 +16,6 @@ A smooth ROC curve estimator based on log-concave density estimates.
 Preprint.
 }
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html}}
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}}
 \seealso{Used for the computation of AUC in \code{\link{logConROC}}.}
 \keyword{nonparametric}

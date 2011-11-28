@@ -40,7 +40,7 @@ A smooth ROC curve estimator based on log-concave density estimates.
 Preprint.
 }
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html}}
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}}
 \note{Note.
 }
 \seealso{For the computation of the AUC the function \code{\link{ROCx}} is used. In the example below we analyze the 

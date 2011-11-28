@@ -21,7 +21,7 @@ where \eqn{G^{-1}_\theta} is described in \code{\link{qloglin}}.}
 \value{Returns a data.frame with row \eqn{(p_{0, i}, q_{0, i})} where
 \eqn{q_{0, i} = \inf_{x}\{\widehat F_m(x) \ge p_{0, i}\}}{q_{0, i} = inf_{x}\{\hat F_m(x) \ge p_{0, i}\}} and \eqn{p_{0, i}} runs through \code{ps}.}
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 

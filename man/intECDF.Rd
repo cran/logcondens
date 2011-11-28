@@ -21,7 +21,7 @@ where \eqn{i_0 = \max_{i=1,\ldots,m} \{x_i \le t\}}{i_0 = \max_{i=1,\ldots, m}{x
 \value{Vector of the same length as \eqn{\bold{s}}{s}, containing the values of \eqn{\bar I} at the elements of \eqn{\bold{s}}{s}.}
 
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 \seealso{

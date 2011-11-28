@@ -5,7 +5,7 @@
 with not necessarily equal entries, 
 \code{\link{activeSetLogCon}} first computes vectors \eqn{{\bold{x}_m} = (x_1, \ldots, x_m)}{x_m = (x_1, \ldots, x_m)} and
 \eqn{{\bold{w}} = (w_1, \ldots, w_m)}{w = (w_1, \ldots, w_m)} where \eqn{w_i} is the weight of each \eqn{x_i} s.t. 
-\eqn{sum_{i=1}^m w_i = 1}.
+\eqn{\sum_{i=1}^m w_i = 1}.
 Then, \code{\link{activeSetLogCon}} computes a concave, piecewise 
 linear function \eqn{\widehat \phi_m} on \eqn{[x_1, x_m]} with knots only in \eqn{\{x_1, \ldots, x_m\}}{{x_1, \ldots, x_m}} such that 
   
@@ -50,7 +50,7 @@ Computing maximum likelihood estimators of a log-concave density function.
 \emph{J. Stat. Comput. Simul.} \bold{77}, 561--574.
 }
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 \seealso{

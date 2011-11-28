@@ -29,7 +29,7 @@ and \eqn{\widehat F_m^*(t)}{\hat F_m^*(t)}.
 \value{Matrix with rows \eqn{(x_{0, i}, \widehat \phi_m(x_{0, i}), \widehat f_m(x_{0, i}), \widehat F_m(x_{0, i}), \widehat f_m^*(x_{0, i}), \widehat F_m^*(x_{0, i}))}{(x_{0, i}, \hat \phi_m(x_{0, i}), \hat f_m(x_{0, i}), \hat F_m(x_{0, i}), \hat f_m^*(x_{0, i}), \hat F_m^*(x_{0, i}))}
 where \eqn{x_{0,i}} is the \eqn{i}-th entry of \code{xs}.}
 \author{
-Kaspar Rufibach, \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html} 
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
 Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
 \examples{
