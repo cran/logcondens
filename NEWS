@@ -1,3 +1,8 @@
+logcondens_2.0.6:
+---------------------------------
+- Modified function logConROC (option "smooth").
+- Added function confIntBootLogConROC_t0().
+
 logcondens_2.0.5:
 ---------------------------------
 - Added NAMESPACE.

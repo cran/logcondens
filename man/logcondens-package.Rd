@@ -5,32 +5,22 @@
 \alias{logcondens}
 \docType{package}
 \title{Estimate a Log-Concave Probability Density from iid Observations}
-\description{The main function of this package is \code{\link{logConDens}}: A function to compute the maximum 
-likelihood estimator (MLE) of a log-concave density from one-dimensional i.i.d. observations as well as the kernel
-smoothed version derived from it. A list of additional functions
-that can be used to compute quantities relevant in that context can be found below.
+\description{The main function of this package is \code{\link{logConDens}}: A function to compute the maximum likelihood estimator (MLE) of a log-concave density from one-dimensional i.i.d. observations as well as the kernel smoothed version derived from it. A list of additional functions that can be used to compute quantities relevant in that context can be found below.
 
-Two algorithms are offered to compute the estimate: An active set (\code{\link{logConDens}}) and an iterative algorithm based on the 
-pool-adjacent-violaters algorithm (\code{\link{icmaLogCon}}).
-The latter of these functions is only part of this package for historical reasons: it was the first method that was proposed to 
-estimate a log-concave density, see Rufibach (2007). The more efficient way of computing the estimate is via an 
-active set algorithm. The smoothed versions of the log-concave density and distribution function estimates 
-discussed in Section 3 of Duembgen and Rufibach (2009) are available in the function \code{\link{evaluateLogConDens}}.
+Two algorithms are offered to compute the estimate: An active set (\code{\link{logConDens}}) and an iterative algorithm based on the pool-adjacent-violaters algorithm (\code{\link{icmaLogCon}}). The latter of these functions is only part of this package for historical reasons: it was the first method that was proposed to estimate a log-concave density, see Rufibach (2007). The more efficient way of computing the estimate is via an active set algorithm. The smoothed versions of the log-concave density and distribution function estimates discussed in Section 3 of Duembgen and Rufibach (2009) are available in the function \code{\link{evaluateLogConDens}}.
 
-To compute a log-concave density, CDF, and survival function from interval- or right-censored observations use the package
-\pkg{logconcens}. A log-concave probability mass function can be computed using the package \pkg{logcondiscr}, see Balabdaoui et al (2011) for details.
-For the computation of a log-concave estimate in any dimension the package \pkg{LogConDEAD} can be used.}
+To compute a log-concave density, CDF, and survival function from interval- or right-censored observations use the package \pkg{logconcens}. A log-concave probability mass function can be computed using the package \pkg{logcondiscr}, see Balabdaoui et al (2011) for details. For the computation of a log-concave estimate in any dimension the package \pkg{LogConDEAD} can be used.}
 
 \details{
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 2.0.4 \cr
-Date: \tab 2011-11-28 \cr
+Version: \tab 2.0.6 \cr
+Date: \tab 2011-12-19 \cr
 License: \tab GPL (>=2) \cr
 }
 
-The following additional functions are provided in the package:
+The following additional functions and datasets are provided in the package:
 
 \code{\link{evaluateLogConDens}} Computes the value of the estimated log-density, density, and distribution function 
 of the MLE and the smoothed estimator at a given \code{x0}. 
@@ -45,6 +35,8 @@ estimator at a given \code{x0}.
 \code{\link{logconTwoSample}} Compute a permutation test for the difference between two distribution functions. 
 
 \code{\link{logConROC}} Compute ROC curve based on log-concave density estimates within cases and controls.
+
+\code{\link{confIntBootLogConROC_t0}} Compute bootstrap confidence intervals at given false positive fractions (= 1 - specificity) for the ROC curve based on log-concave density estimates.
 
 \code{\link{isoMean}} Compute the weighted least squares regression under a monotonicity constraint (the Grenander estimator).
 This function is used as part of \code{\link{icmaLogCon}} but is also of independent interest. 

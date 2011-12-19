@@ -8,16 +8,14 @@
 for \eqn{t \in [0, 1]}. It is typically used to assess the performance of a diagnostic test used to discriminate between healthy and diseased
 individuals based on a continuous variable.
 }
-\usage{logConROC(cases, controls, grid)}
+\usage{logConROC(cases, controls, grid, smooth = TRUE)}
 \arguments{
   \item{cases}{A vector of measurements for the cases.}
   \item{controls}{A vector of measurements for the controls.}
   \item{grid}{A vector specifying the grid where the ROC curve is computed on.}
+  \item{smooth}{Logical, indicating whether ROC curve and AUC should also be computed based on the smoothed log-concave density estimator.}
 }
-\details{In Rufibach (2011) it was shown that the ROC curve based on log-concave density estimates exhibit nice properties for finite sample sizes
-as well as asymptotically. Its performance is typically much better than that of the empirical ROC curve and only, if at all, sligthly worse compared
-to the binormal model when in fact the underlying densities are normal. However, log-concavity encompasses many parametric densities, so this
-new model is much more flexible than the binormal one, at little efficiency sacrifice.}
+\details{In Rufibach (2011) it was shown that the ROC curve based on log-concave density estimates exhibit nice properties for finite sample sizes as well as asymptotically. Its performance is typically much better than that of the empirical ROC curve and only, if at all, sligthly worse compared to the binormal model when in fact the underlying densities are normal. However, log-concavity encompasses many parametric densities, so this new model is much more flexible than the binormal one, at little efficiency sacrifice.}
 \value{
 \item{m}{Number of control measurements.}
 \item{n}{Number of case measurements.}
@@ -41,10 +39,10 @@ Preprint.
 }
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}}
-\note{Note.
-}
-\seealso{For the computation of the AUC the function \code{\link{ROCx}} is used. In the example below we analyze the 
+
+\seealso{Confidence intervals at given false-positive fractions for the ROC curve based on log-concave densities can be computed using \code{\link{confIntBootLogConROC_t0}}. For the computation of the AUC the function \code{\link{ROCx}} is used. In the example below we analyze the 
 \code{\link{pancreas}} data.}
+
 \examples{
 ## ROC curve for pancreas data 
 data(pancreas)
@@ -74,5 +72,12 @@ segments(0, 0, 1, 1, col = 1)
 lines(1 - spec, sens, type = 'l', col = 2, lwd = 2)
 lines(grid, roc.logcon$fROC, col = 3, lwd = 2)
 lines(grid, roc.logcon$fROC.smooth, col = 4, lwd = 2, lty = 2)
+
+\dontrun{
+## bootstrap confidence intervals at 1 - specificity = 0.2 and 0.8:
+res <- confIntBootLogConROC_t0(controls, cases, grid = c(0.2, 0.8), conf.level = 0.95, 
+    M = 1000, smooth = TRUE, output = TRUE)
+res
+}
 }
 \keyword{nonparametric}

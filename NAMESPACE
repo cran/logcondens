@@ -1,5 +1,7 @@
 ## which functions shall be accessible by the users?
-export(activeSetLogCon,
+export(
+activeSetLogCon,
+confIntBootLogConROC_t0,
 etaphi,
 evaluateLogConDens,
 icmaLogCon,
