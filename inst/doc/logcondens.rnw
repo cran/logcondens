@@ -1375,7 +1375,6 @@ The work of Lutz D\"{u}mbgen was supported by the Swiss National Science Foundat
 % \section{References} \label{sec: references}
 % -----------------------------------------------------
 %\nocite{*}
-%\bibliographystyle{ims}
 \bibliography{stat}
 
 

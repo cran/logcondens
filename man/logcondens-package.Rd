@@ -9,14 +9,14 @@
 
 Two algorithms are offered to compute the estimate: An active set (\code{\link{logConDens}}) and an iterative algorithm based on the pool-adjacent-violaters algorithm (\code{\link{icmaLogCon}}). The latter of these functions is only part of this package for historical reasons: it was the first method that was proposed to estimate a log-concave density, see Rufibach (2007). The more efficient way of computing the estimate is via an active set algorithm. The smoothed versions of the log-concave density and distribution function estimates discussed in Section 3 of Duembgen and Rufibach (2009) are available in the function \code{\link{evaluateLogConDens}}.
 
-To compute a log-concave density, CDF, and survival function from interval- or right-censored observations use the package \pkg{logconcens}. A log-concave probability mass function can be computed using the package \pkg{logcondiscr}, see Balabdaoui et al (2011) for details. For the computation of a log-concave estimate in any dimension the package \pkg{LogConDEAD} can be used.}
+To compute a log-concave density, CDF, and survival function from interval- or right-censored observations use the package \pkg{logconcens}. A log-concave probability mass function can be computed using the package \pkg{logcondiscr}, see Balabdaoui et al (2012) for details. For the computation of a log-concave estimate in any dimension the package \pkg{LogConDEAD} can be used.}
 
 \details{
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 2.0.6 \cr
-Date: \tab 2011-12-19 \cr
+Version: \tab 2.0.7 \cr
+Date: \tab 2012-03-23 \cr
 License: \tab GPL (>=2) \cr
 }
 
@@ -67,8 +67,8 @@ Kaspar Rufibach gratefully acknowledges support by the Swiss National Science Fo
 
 MatLab code with an implementation of the active set algorithm is available on request from Lutz Duembgen.}
 \references{
-Balabdaoui, F., Jankowski, H., and Rufibach, K. (2011).
-Maximum likelihood estimation and confidence bands for a discrete log-concave distribution.
+Balabdaoui, F., Jankowski, H., and Rufibach, K., Pavlides, M. (2012).
+Asymptotics of the discrete log-concave maximum likelihood estimator and related applications.
 Preprint.
 
 Duembgen, L., Huesler, A. and Rufibach, K. (2010)
@@ -99,9 +99,9 @@ Rufibach, K. (2007)
 Computing maximum likelihood estimators of a log-concave density function.
 \emph{J. Stat. Comput. Simul.} \bold{77}, 561--574.
 
-Rufibach, K. (2011).
+Rufibach, K. (2012).
 A smooth ROC curve estimator based on log-concave density estimates.
-Preprint.
+Int. J. Biostat., to appear.
 }
 
 \examples{

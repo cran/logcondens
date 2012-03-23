@@ -11,9 +11,9 @@
 }
 \value{A real number or a vector of dimension the same as \eqn{x}, the value of the ROC curve at \code{x}.}
 \references{
-Rufibach, K. (2011).
+Rufibach, K. (2012).
 A smooth ROC curve estimator based on log-concave density estimates.
-Preprint.
+Int. J. Biostat., to appear.
 }
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}}

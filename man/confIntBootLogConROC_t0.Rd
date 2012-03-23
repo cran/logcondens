@@ -22,9 +22,9 @@ M = 1000, smooth = TRUE, output = TRUE)}
 
 \references{The reference for computation of these bootstrap confidence intervals is:
 
-Rufibach, K. (2011).
+Rufibach, K. (2012).
 A smooth ROC curve estimator based on log-concave density estimates.
-Preprint.
+Int. J. Biostat., to appear.
 
 The bootstrap competitor based on the empirical ROC curve is described in:
 

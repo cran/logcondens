@@ -33,9 +33,9 @@ Duembgen, L. and Rufibach, K. (2011)
 logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
 \emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \url{http://www.jstatsoft.org/v39/i06}
 
-Rufibach, K. (2011).
+Rufibach, K. (2012).
 A smooth ROC curve estimator based on log-concave density estimates.
-Preprint.
+Int. J. Biostat., to appear.
 }
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}}
