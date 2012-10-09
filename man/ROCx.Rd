@@ -13,7 +13,7 @@
 \references{
 Rufibach, K. (2012).
 A smooth ROC curve estimator based on log-concave density estimates.
-Int. J. Biostat., to appear.
+\emph{Int. J. Biostat.}, \bold{8}(1), 1--29.
 }
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}}

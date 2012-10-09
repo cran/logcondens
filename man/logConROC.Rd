@@ -25,17 +25,17 @@ individuals based on a continuous variable.
 \item{res1}{\code{dlc} object as a result of a call to \code{\link{logConDens}} for the data of the cases.}
 }
 \references{
-Duembgen, L. and Rufibach, K. (2009)
+Duembgen, L. and Rufibach, K. (2009).
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 \emph{Bernoulli}, \bold{15(1)}, 40--68. 
 
-Duembgen, L. and Rufibach, K. (2011)
+Duembgen, L. and Rufibach, K. (2011).
 logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
 \emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \url{http://www.jstatsoft.org/v39/i06}
 
 Rufibach, K. (2012).
 A smooth ROC curve estimator based on log-concave density estimates.
-Int. J. Biostat., to appear.
+\emph{Int. J. Biostat.}, \bold{8}(1), 1--29.
 }
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}}

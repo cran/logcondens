@@ -37,5 +37,8 @@ quantilesLogConDens,
 rlogcon,
 robust,
 ROCx,
-summary.dlc
+summary.dlc,
+logConCI,
+ftilde,
+c2hat
 )

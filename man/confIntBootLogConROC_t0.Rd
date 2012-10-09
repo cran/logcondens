@@ -24,7 +24,7 @@ M = 1000, smooth = TRUE, output = TRUE)}
 
 Rufibach, K. (2012).
 A smooth ROC curve estimator based on log-concave density estimates.
-Int. J. Biostat., to appear.
+\emph{Int. J. Biostat.}, \bold{8}(1), 1--29.
 
 The bootstrap competitor based on the empirical ROC curve is described in:
 

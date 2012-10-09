@@ -1,3 +1,9 @@
+logcondens_2.0.8:
+---------------------------------
+- Corrected a wrong link in evaluateLogConDens.
+- Added the function logConCI, contributed by M. Azadbakhsh and H. Jankowski.
+- Updated references.
+
 logcondens_2.0.7:
 ---------------------------------
 - Updated package to pass new checks on CRAN.

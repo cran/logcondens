@@ -15,8 +15,8 @@ To compute a log-concave density, CDF, and survival function from interval- or r
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 2.0.7 \cr
-Date: \tab 2012-03-23 \cr
+Version: \tab 2.0.8 \cr
+Date: \tab 2012-10-09 \cr
 License: \tab GPL (>=2) \cr
 }
 
@@ -37,6 +37,8 @@ estimator at a given \code{x0}.
 \code{\link{logConROC}} Compute ROC curve based on log-concave density estimates within cases and controls.
 
 \code{\link{confIntBootLogConROC_t0}} Compute bootstrap confidence intervals at given false positive fractions (= 1 - specificity) for the ROC curve based on log-concave density estimates.
+
+\code{\link{logConCI}} Compute a confidence interval for the value of the true density at a fixed point, based on the theory developed in Balabdaoui et al (2009). This function was contributed by Mahdis Azadbakhsh and Hanna Jankowski, see Azadbakhsh et al (2012).
 
 \code{\link{isoMean}} Compute the weighted least squares regression under a monotonicity constraint (the Grenander estimator).
 This function is used as part of \code{\link{icmaLogCon}} but is also of independent interest. 
@@ -67,19 +69,27 @@ Kaspar Rufibach gratefully acknowledges support by the Swiss National Science Fo
 
 MatLab code with an implementation of the active set algorithm is available on request from Lutz Duembgen.}
 \references{
+Azadbakhsh, M., Jankowski, H. and Gao, X. (2012).
+Computing confidence intervals for log-concave densities. 
+Preprint.
+
 Balabdaoui, F., Jankowski, H., and Rufibach, K., Pavlides, M. (2012).
 Asymptotics of the discrete log-concave maximum likelihood estimator and related applications.
 Preprint.
 
-Duembgen, L., Huesler, A. and Rufibach, K. (2010)
+Baladbaoui, F., Rufibach, K. and Wellner, J. (2009).
+Limit distribution theory for maximum likelihood estimation of a log-concave density.
+\emph{Ann. Statist.}, \bold{37(3)}, 1299--1331.
+
+Duembgen, L., Huesler, A. and Rufibach, K. (2010).
 Active set and EM algorithms for log-concave densities based on complete and censored data.
 Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
 
-Duembgen, L. and Rufibach, K. (2009)
+Duembgen, L. and Rufibach, K. (2009).
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 \emph{Bernoulli}, \bold{15(1)}, 40--68.  
 
-Duembgen, L. and Rufibach, K. (2011)
+Duembgen, L. and Rufibach, K. (2011).
 logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
 \emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \url{http://www.jstatsoft.org/v39/i06}
 
@@ -91,17 +101,18 @@ Mizera, I., Koenker, R. (2010).
 Quasi-concave density estimation.
 \emph{Ann. Statist.}, \bold{38(5)}, 2998--3027. 
 
-Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
+Rufibach K. (2006). 
+\emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.
 \cr Available at \url{http://www.stub.unibe.ch/download/eldiss/06rufibach_k.pdf}.
 
-Rufibach, K. (2007)
+Rufibach, K. (2007).
 Computing maximum likelihood estimators of a log-concave density function.
 \emph{J. Stat. Comput. Simul.} \bold{77}, 561--574.
 
 Rufibach, K. (2012).
 A smooth ROC curve estimator based on log-concave density estimates.
-Int. J. Biostat., to appear.
+\emph{Int. J. Biostat.}, \bold{8}(1), 1--29.
 }
 
 \examples{

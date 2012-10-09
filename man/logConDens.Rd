@@ -36,7 +36,7 @@ Duembgen, L. and Rufibach, K. (2009).
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
 \emph{Bernoulli}, \bold{15(1)}, 40--68.  
 
-Duembgen, L. and Rufibach, K. (2011)
+Duembgen, L. and Rufibach, K. (2011).
 logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
 \emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \url{http://www.jstatsoft.org/v39/i06}
 }
@@ -122,6 +122,12 @@ lines(res$x, phi, col = 2)
 lines(xs, log(f.normal), col = 3)
 lines(xs, log(f.kernel), col = 4)
 lines(xs, log(f.smoothed), lwd = 3, col = 5)
+
+
+## ===================================================
+## Confidence intervals at a fixed point for the density
+## see help file for logConCI()
+## ===================================================
 }
 \keyword{htest}
 \keyword{nonparametric}
