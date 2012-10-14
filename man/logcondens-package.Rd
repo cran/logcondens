@@ -15,8 +15,8 @@ To compute a log-concave density, CDF, and survival function from interval- or r
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 2.0.8 \cr
-Date: \tab 2012-10-09 \cr
+Version: \tab 2.0.9 \cr
+Date: \tab 2012-10-14 \cr
 License: \tab GPL (>=2) \cr
 }
 

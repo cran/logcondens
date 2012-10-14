@@ -59,6 +59,7 @@ Hanna Jankowski, \email{hkj@mathstat.yorku.ca}, \cr \url{http://www.math.yorku.c
 ## ===================================================
 ## Confidence intervals at a fixed point for the density
 ## ===================================================
+set.seed(2012)
 data(reliability)
 x.rel <- sort(reliability)
 
