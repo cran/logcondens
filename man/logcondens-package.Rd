@@ -15,8 +15,8 @@ To compute a log-concave density, CDF, and survival function from interval- or r
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 2.0.9 \cr
-Date: \tab 2012-10-14 \cr
+Version: \tab 2.1.0 \cr
+Date: \tab 2013-12-14 \cr
 License: \tab GPL (>=2) \cr
 }
 
@@ -73,9 +73,9 @@ Azadbakhsh, M., Jankowski, H. and Gao, X. (2012).
 Computing confidence intervals for log-concave densities. 
 Preprint.
 
-Balabdaoui, F., Jankowski, H., and Rufibach, K., Pavlides, M. (2012).
+Balabdaoui, F., Jankowski, H., Rufibach, K. and Pavlides, M. (2012).
 Asymptotics of the discrete log-concave maximum likelihood estimator and related applications.
-Preprint.
+\emph{J. R. Stat. Soc. Ser. B Stat. Methodol.}, \bold{75(4)}, 769--790. 
 
 Baladbaoui, F., Rufibach, K. and Wellner, J. (2009).
 Limit distribution theory for maximum likelihood estimation of a log-concave density.
