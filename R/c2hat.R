@@ -22,7 +22,7 @@ c2hat <- function(res, xx0, type = c("DR", "ks", "nrd")[2], htype = c("hscv", "h
 				fhat		<-	fmle[, 3]					
 		
 				if("DR" %in% type){
-					h_DR		<-	sqrt(mle$sig^2 - LocalVariance(x = mle$x, phi = mle$phi))
+					h_DR		<-	sqrt(mle$sig^2 - LocalVariance(x = mle$x, w = mle$w, phi = mle$phi))
 					f0			<-	function(loc){return(ftilde(loc, grid, fhat, dy, h = h_DR, type = 0))}
 					f0_DR		<-	unlist(lapply(xx0, f0))
 					f1			<-	function(loc){return(ftilde(loc, grid, fhat, dy, h = h_DR, type = 1))}

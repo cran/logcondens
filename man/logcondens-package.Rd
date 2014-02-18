@@ -15,8 +15,8 @@ To compute a log-concave density, CDF, and survival function from interval- or r
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 2.1.0 \cr
-Date: \tab 2013-12-14 \cr
+Version: \tab 2.1.1 \cr
+Date: \tab 2014-02-18 \cr
 License: \tab GPL (>=2) \cr
 }
 
@@ -69,9 +69,9 @@ Kaspar Rufibach gratefully acknowledges support by the Swiss National Science Fo
 
 MatLab code with an implementation of the active set algorithm is available on request from Lutz Duembgen.}
 \references{
-Azadbakhsh, M., Jankowski, H. and Gao, X. (2012).
+Azadbakhsh, M., Jankowski, H. and Gao, X. (2014).
 Computing confidence intervals for log-concave densities. 
-Preprint.
+\emph{Comput. Statist. Data Anal.}, to appear.
 
 Balabdaoui, F., Jankowski, H., Rufibach, K. and Pavlides, M. (2012).
 Asymptotics of the discrete log-concave maximum likelihood estimator and related applications.
