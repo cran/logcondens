@@ -1,3 +1,8 @@
+logcondens_2.1.2:
+---------------------------------
+- Updated dependency for c2hat.
+- Updated webadress for Lutz Duembgen.
+
 logcondens_2.1.1:
 ---------------------------------
 - Updated logConCI to compute a confidence interval.

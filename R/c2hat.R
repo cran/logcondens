@@ -1,7 +1,5 @@
 c2hat <- function(res, xx0, type = c("DR", "ks", "nrd")[2], htype = c("hscv", "hlscv", "hpi", "hns")[4]){
 
-                require(ks)
-
                 ## re-translate to Hanna's arguments:
                 data        <-  res$xn
                 mle         <-  res

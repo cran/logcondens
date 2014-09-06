@@ -1,4 +1,4 @@
-logConCI <- function(res, xx0, conf.level = c(0.8, 0.9, 0.95, 0.99)[3], type = c("DR", "ks", "nrd", "ECDFboot", "NPMLboot")[2], htype = c("hscv", "hlscv", "hpi", "hns")[4], BB=500){
+logConCI <- function(res, xx0, conf.level = c(0.8, 0.9, 0.95, 0.99)[3], type = c("DR", "ks", "nrd", "ECDFboot", "NPMLboot")[2], htype = c("hscv", "hlscv", "hpi", "hns")[4], BB = 500){
 
                 ## re-translate to Hanna's arguments:
                 data        <-  res$xn

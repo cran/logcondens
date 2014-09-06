@@ -23,7 +23,7 @@ where \eqn{i_0 = \max_{i=1,\ldots,m} \{x_i \le t\}}{i_0 = \max_{i=1,\ldots, m}{x
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.imsv.unibe.ch/content/staff/personalhomepages/duembgen/index_eng.html}}
 \seealso{
 This function together with \code{\link{intF}} can be used to check the characterization of the log-concave density
 estimator in terms of distribution functions, see Rufibach (2006) and Duembgen and Rufibach (2009).

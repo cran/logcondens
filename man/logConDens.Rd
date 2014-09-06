@@ -43,7 +43,7 @@ logcondens: Computations Related to Univariate Log-Concave Density Estimation.
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.imsv.unibe.ch/content/staff/personalhomepages/duembgen/index_eng.html}
 }
 \examples{
 ## ===================================================

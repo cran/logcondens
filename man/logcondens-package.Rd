@@ -15,8 +15,8 @@ To compute a log-concave density, CDF, and survival function from interval- or r
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 2.1.1 \cr
-Date: \tab 2014-02-18 \cr
+Version: \tab 2.1.2 \cr
+Date: \tab 2014-09-06 \cr
 License: \tab GPL (>=2) \cr
 }
 
@@ -63,7 +63,7 @@ A \code{\link{print}} and \code{\link{summary}} for objects of class \code{dlc},
 \author{
 Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.staff.unibe.ch/duembgen}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.imsv.unibe.ch/content/staff/personalhomepages/duembgen/index_eng.html}
 
 Kaspar Rufibach gratefully acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}.
 

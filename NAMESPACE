@@ -42,3 +42,5 @@ logConCI,
 ftilde,
 c2hat
 )
+
+importFrom(ks, hscv, kdde, hlscv, hpi, hns)
