@@ -1,3 +1,7 @@
+logcondens_2.1.3:
+---------------------------------
+- Added proper S3 exporting.
+
 logcondens_2.1.2:
 ---------------------------------
 - Updated dependency for c2hat.

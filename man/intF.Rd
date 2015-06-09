@@ -30,7 +30,7 @@ and the function \eqn{J} introduced in \code{\link{Jfunctions}}.
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.imsv.unibe.ch/content/staff/personalhomepages/duembgen/index_eng.html}}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.stat.unibe.ch/content/staff/personalhomepages/duembgen/index_eng.html}}
 \seealso{
 This function uses the output of \code{\link{activeSetLogCon}}. The function \code{\link{intECDF}} is similar, but based
 on the empirical distribution function.
@@ -47,7 +47,7 @@ logcondens: Computations Related to Univariate Log-Concave Density Estimation.
 
 Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.
-\cr Available at \url{http://www.stub.unibe.ch/download/eldiss/06rufibach_k.pdf}.
+\cr Available at \url{http://www.zb.unibe.ch/download/eldiss/06rufibach_k.pdf}.
 }
 
 \examples{

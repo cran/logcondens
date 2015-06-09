@@ -5,7 +5,7 @@
 \alias{logcondens}
 \docType{package}
 \title{Estimate a Log-Concave Probability Density from iid Observations}
-\description{The main function of this package is \code{\link{logConDens}}: A function to compute the maximum likelihood estimator (MLE) of a log-concave density from one-dimensional i.i.d. observations as well as the kernel smoothed version derived from it. A list of additional functions that can be used to compute quantities relevant in that context can be found below.
+\description{The main function of this package is \code{\link{logConDens}}: compute the maximum likelihood estimator (MLE) of a log-concave density from one-dimensional i.i.d. observations as well as the kernel smoothed version derived from it. A list of additional functions that can be used to compute quantities relevant in that context can be found below.
 
 Two algorithms are offered to compute the estimate: An active set (\code{\link{logConDens}}) and an iterative algorithm based on the pool-adjacent-violaters algorithm (\code{\link{icmaLogCon}}). The latter of these functions is only part of this package for historical reasons: it was the first method that was proposed to estimate a log-concave density, see Rufibach (2007). The more efficient way of computing the estimate is via an active set algorithm. The smoothed versions of the log-concave density and distribution function estimates discussed in Section 3 of Duembgen and Rufibach (2009) are available in the function \code{\link{evaluateLogConDens}}.
 
@@ -15,8 +15,8 @@ To compute a log-concave density, CDF, and survival function from interval- or r
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 2.1.2 \cr
-Date: \tab 2014-09-06 \cr
+Version: \tab 2.1.3 \cr
+Date: \tab 2015-06-09 \cr
 License: \tab GPL (>=2) \cr
 }
 
@@ -63,7 +63,7 @@ A \code{\link{print}} and \code{\link{summary}} for objects of class \code{dlc},
 \author{
 Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.imsv.unibe.ch/content/staff/personalhomepages/duembgen/index_eng.html}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.stat.unibe.ch/content/staff/personalhomepages/duembgen/index_eng.html}
 
 Kaspar Rufibach gratefully acknowledges support by the Swiss National Science Foundation SNF, \url{http://www.snf.ch}.
 
@@ -104,7 +104,7 @@ Quasi-concave density estimation.
 Rufibach K. (2006). 
 \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.
-\cr Available at \url{http://www.stub.unibe.ch/download/eldiss/06rufibach_k.pdf}.
+\cr Available at \url{http://www.zb.unibe.ch/download/eldiss/06rufibach_k.pdf}.
 
 Rufibach, K. (2007).
 Computing maximum likelihood estimators of a log-concave density function.

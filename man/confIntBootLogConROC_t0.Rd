@@ -33,7 +33,7 @@ Improved confidence intervals for the sensitivity at a fixed level of specificit
 \emph{Statist. Med.}, \bold{24}, 465--477.
 }
 
-\author{Kaspar Rufibach (maintainer) \cr \email{kaspar.rufibach@ifspm.uzh.ch} \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html}.}
+\author{Kaspar Rufibach (maintainer) \cr \email{kaspar.rufibach@gmail.com} \cr \url{http://www.kasparrufibach.ch}.}
 
 \note{The confidence intervals are only valid if observations are \emph{independent}, i.e. eacht patient only contributes one measurement, e.g.}
 

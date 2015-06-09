@@ -44,3 +44,6 @@ c2hat
 )
 
 importFrom(ks, hscv, kdde, hlscv, hpi, hns)
+
+S3method(summary, dlc, summary.dlc)
+S3method(plot, dlc, plot.dlc)
