@@ -44,6 +44,8 @@ c2hat
 )
 
 importFrom(ks, hscv, kdde, hlscv, hpi, hns)
+importFrom("graphics", "abline", "legend", "lines", "mtext", "par", "plot", "rug", "segments")
+importFrom("stats", "dnorm", "integrate", "pnorm", "quantile", "rnorm", "runif", "uniroot")
 
 S3method(summary, dlc, summary.dlc)
 S3method(plot, dlc, plot.dlc)

@@ -1,6 +1,6 @@
-3a28290e7c38cef2de5847f2898bcdd8 *DESCRIPTION
-d704e7cd09aa11f2cd0488462bf2547b *NAMESPACE
-e857a272c382f999cb6416a3ef618a54 *NEWS
+3a564654977fe520231ddf8175b56112 *DESCRIPTION
+7f25ebcc37a2d9194a4102b84efb6efc *NAMESPACE
+a9c5bf7abc78f072276693c5109c5479 *NEWS
 248c6cc4fa385a116a2cdb3cd4a75e16 *R/J00.r
 d31f15c6761c896172e2c9e63833e4e0 *R/J10.r
 e2302932951c466215bce54c512cfc36 *R/J11.r
@@ -50,7 +50,7 @@ cb4b7ea521b75587e84b250ba48dd90b *data/pancreas.rda
 63773f06892eb345fb46a2574ecf8757 *inst/CITATION
 156d054d71d7169c03394be2e7709dbf *inst/doc/logcondens.R
 f93b01a06af194deb58b27cd7d1b85db *inst/doc/logcondens.Rnw
-1f7f2b9d93d1b67054812f4f30bf5a16 *inst/doc/logcondens.pdf
+b389e82cad473acb5572814b011271be *inst/doc/logcondens.pdf
 aa65e08de18888def77627866ff4e7a4 *man/Jfunctions.Rd
 e86256c8a3118c0fa3083c0898e3fdbb *man/Lhat_eta.Rd
 77bc768d593a52e9f425000f01cf48b0 *man/Local_LL.Rd
@@ -88,11 +88,11 @@ a42e29ed029a0129a41e52ddbf0be904 *man/summary.dlc.Rd
 526cf167a101c93078c1146b8ca016de *vignettes/jss.dtx
 b9564ddd59a06782310989e8f33db55e *vignettes/jsslogo.jpg
 f93b01a06af194deb58b27cd7d1b85db *vignettes/logcondens.Rnw
-b7624c722d12fc9339ac1a81bf62b9d5 *vignettes/plots/-plot1.pdf
-b4ab47aeda62f63488fdc28d0ae0a0a0 *vignettes/plots/-plot2.pdf
-c38f100aa7c8d4b43b06a009b530e7df *vignettes/plots/-plot2sample.pdf
-4fd7ef7a0f1078ec6a6c1b57c9e2b043 *vignettes/plots/-plotSimul.pdf
-d24149b2958ca4fcebca4e12f0c9f476 *vignettes/plots/-sim1.pdf
+6717dc68173d9a88611bff86705a06dc *vignettes/plots/-plot1.pdf
+5f52041698055fcfd3cd6a5d6815c278 *vignettes/plots/-plot2.pdf
+3472a3203137fee0d0f1ddac8fd9229e *vignettes/plots/-plot2sample.pdf
+f3421c0f941deb8e01d555032638b34e *vignettes/plots/-plotSimul.pdf
+2ff2a5e0d0b7ef340a5229d2603d2694 *vignettes/plots/-sim1.pdf
 e7c9655100ae020ad63488c1a954bb26 *vignettes/results/pvals_setting=1_n1=20_n2=25_mu1=0_mu2=0.5.txt
 45f18f0b0fe55b8b1d122839f38f8a79 *vignettes/results/pvals_setting=1_n1=20_n2=25_mu1=0_mu2=0.txt
 bdfa80a0cfab10c5d27c49cead6834f2 *vignettes/results/pvals_setting=1_n1=20_n2=25_mu1=0_mu2=1.5.txt
