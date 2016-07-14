@@ -52,7 +52,7 @@ Computing maximum likelihood estimators of a log-concave density function.
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.stat.unibe.ch/content/staff/personalhomepages/duembgen/index_eng.html}}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.imsv.unibe.ch/about_us/staff/prof_dr_duembgen_lutz/index_eng.html}}
 \seealso{
 \code{\link{icmaLogCon}} can be used to estimate a log-concave density. However, to generate an object of
 class \code{dlc} that allows application of \code{\link{summary}} and \code{\link{plot}} one has to 
