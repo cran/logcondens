@@ -13,7 +13,7 @@ Maximum likelihood estimation of a log--concave density and its distribution fun
 
 Duembgen, L. and Rufibach, K. (2011)
 logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
-\emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \url{http://www.jstatsoft.org/v39/i06}
+\emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \doi{https://doi.org/10.18637/jss.v039.i06}
 }
 \seealso{See the example in \code{\link{logConDens}} for the analysis of this data.}
 \keyword{datasets}

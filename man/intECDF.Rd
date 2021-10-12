@@ -23,7 +23,7 @@ where \eqn{i_0 = \max_{i=1,\ldots,m} \{x_i \le t\}}{i_0 = \max_{i=1,\ldots, m}{x
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.imsv.unibe.ch/about_us/staff/prof_dr_duembgen_lutz/index_eng.html}}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{https://www.imsv.unibe.ch/about_us/staff/prof_dr_duembgen_lutz/index_eng.html}}
 \seealso{
 This function together with \code{\link{intF}} can be used to check the characterization of the log-concave density
 estimator in terms of distribution functions, see Rufibach (2006) and Duembgen and Rufibach (2009).
@@ -36,11 +36,11 @@ Maximum likelihood estimation of a log--concave density and its distribution fun
 
 Duembgen, L. and Rufibach, K. (2011)
 logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
-\emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \url{http://www.jstatsoft.org/v39/i06}
+\emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \doi{https://doi.org/10.18637/jss.v039.i06}
 
 Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.
-\cr Available at \url{http://www.zb.unibe.ch/download/eldiss/06rufibach_k.pdf}.
+\cr Available at \url{https://slsp-ube.primo.exlibrisgroup.com/permalink/41SLSP_UBE/17e6d97/alma99116730175505511}.
 }
 
 \examples{

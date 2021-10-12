@@ -45,7 +45,7 @@ linear function \eqn{\widehat \phi_m}{\widehat \phi_m} on \eqn{[x_1, x_m]} with 
 \references{
 Duembgen, L, Huesler, A. and Rufibach, K. (2010)
 Active set and EM algorithms for log-concave densities based on complete and censored data. 
-Technical report 61, IMSV, Univ. of Bern, available at \url{http://arxiv.org/abs/0707.4643}.
+Technical report 61, IMSV, Univ. of Bern, available at \url{https://arxiv.org/abs/0707.4643}.
 
 Duembgen, L. and Rufibach, K. (2009)
 Maximum likelihood estimation of a log--concave density and its distribution function: basic properties and uniform consistency. 
@@ -53,12 +53,12 @@ Maximum likelihood estimation of a log--concave density and its distribution fun
 
 Duembgen, L. and Rufibach, K. (2011)
 logcondens: Computations Related to Univariate Log-Concave Density Estimation. 
-\emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \url{http://www.jstatsoft.org/v39/i06}
+\emph{Journal of Statistical Software}, \bold{39(6)}, 1--28. \doi{https://doi.org/10.18637/jss.v039.i06}
 }
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.imsv.unibe.ch/about_us/staff/prof_dr_duembgen_lutz/index_eng.html}}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{https://www.imsv.unibe.ch/about_us/staff/prof_dr_duembgen_lutz/index_eng.html}}
 \seealso{\code{\link{activeSetLogCon}} can be used to estimate a log-concave density. However, to generate an object of
 class \code{dlc} that allows application of \code{\link{summary}} and \code{\link{plot}} we recommend to use \code{\link{logConDens}}.
 

@@ -20,7 +20,7 @@ according to the Hermite interpolation procedure described in Rufibach (2006, 20
 \references{
 Rufibach K. (2006) \emph{Log-concave Density Estimation and Bump Hunting for i.i.d. Observations.}
 PhD Thesis, University of Bern, Switzerland and Georg-August University of Goettingen, Germany, 2006.
-\cr Available at \url{http://www.zb.unibe.ch/download/eldiss/06rufibach_k.pdf}.
+\cr Available at \url{https://slsp-ube.primo.exlibrisgroup.com/permalink/41SLSP_UBE/17e6d97/alma99116730175505511}.
 
 Rufibach, K. (2007)
 Computing maximum likelihood estimators of a log-concave density function.
@@ -31,7 +31,7 @@ Computing maximum likelihood estimators of a log-concave density function.
 \author{
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch} 
 
-Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{http://www.imsv.unibe.ch/about_us/staff/prof_dr_duembgen_lutz/index_eng.html}}
+Lutz Duembgen, \email{duembgen@stat.unibe.ch}, \cr \url{https://www.imsv.unibe.ch/about_us/staff/prof_dr_duembgen_lutz/index_eng.html}}
 
 \keyword{htest}
 \keyword{nonparametric}

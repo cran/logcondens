@@ -61,14 +61,14 @@ Azadbakhsh et al. (2014) provides an empirical study of the relative performance
 \references{
 Azadbakhsh, M., Jankowski, H. and Gao, X. (2014).
 Computing confidence intervals for log-concave densities. 
-\emph{Comput. Statist. Data Anal.}, to appear.
+\emph{Comput. Statist. Data Anal.}, \bold{75}, 248--264.
 
 Baladbaoui, F., Rufibach, K. and Wellner, J. (2009)
 Limit distribution theory for maximum likelihood estimation of a log-concave density.
 \emph{Ann. Statist.}, \bold{37(3)}, 1299--1331.
 
 Tarn Duong (2012). ks: Kernel smoothing. 
-R package version 1.8.10. \url{http://CRAN.R-project.org/package=ks}
+R package version 1.8.10. \url{https://CRAN.R-project.org/package=ks}
 }
 \author{
 Mahdis Azadbakhsh 

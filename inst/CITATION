@@ -9,12 +9,12 @@ citEntry(entry = "Article",
   volume       = "39",
   number       = "6",
   pages        = "1--28",
-  url          = "http://www.jstatsoft.org/v39/i06/",
+  doi          = "10.18637/jss.v039.i06",
 
   textVersion  =
   paste("Lutz Duembgen, Kaspar Rufibach (2011).",
         "logcondens: Computations Related to Univariate Log-Concave Density Estimation.",
         "Journal of Statistical Software, 39(6), 1-28.",
-        "URL http://www.jstatsoft.org/v39/i06/.")
+        "DOI https://doi.org/10.18637/jss.v039.i06.")
 )
 
