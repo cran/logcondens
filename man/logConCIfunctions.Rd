@@ -20,7 +20,7 @@ R package version 1.8.10. \url{https://CRAN.R-project.org/package=ks}
 \author{
 Mahdis Azadbakhsh 
 
-Hanna Jankowski, \email{hkj@mathstat.yorku.ca}, \cr \url{http://www.math.yorku.ca/~hkj/}
+Hanna Jankowski, \email{hkj@yorku.ca}
 }
 \keyword{htest}
 \keyword{nonparametric}

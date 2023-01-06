@@ -1,3 +1,8 @@
+logcondens_2.1.7:
+---------------------------------
+- Minor updates to prettify help files.
+- Fixed bug that prevented activeSetLogCon to run also for n = 2.
+
 logcondens_2.1.6:
 ---------------------------------
 - Updated references to JSS paper.

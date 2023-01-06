@@ -8,6 +8,8 @@ icmaLogCon <- function (x, xgrid = NULL, eps = 10^-8, T1 = 2000, robustif = TRUE
     sig <- tmp$sig
 
     n <- length(x)
+    if (n == 2){stop("For n = 2 use function logConDens()")}  
+
     dx <- c(0, diff(x))
     iter1 <- 0
     dirder <- 2 * eps
@@ -22,7 +24,7 @@ icmaLogCon <- function (x, xgrid = NULL, eps = 10^-8, T1 = 2000, robustif = TRUE
         derivs <- quadDeriv(dx, w, eta)
         grad <- derivs[, 1]
         hess <- -derivs[, 2]
-        y <- eta + grad/hess
+        y <- eta + grad / hess
         etanew[1] <- y[1]
         etanew[2:n] <- -isoMean(-y[2:n], hess[2:n])
         if (robustif == TRUE){etanew <- robust(x, w, eta, etanew, grad)}

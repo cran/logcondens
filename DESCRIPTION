@@ -1,8 +1,8 @@
 Package: logcondens
 Type: Package
 Title: Estimate a Log-Concave Probability Density from Iid Observations
-Version: 2.1.6
-Date: 2021-10-10
+Version: 2.1.7
+Date: 2023-01-06
 Author: Kaspar Rufibach <kaspar.rufibach@gmail.com> and Lutz Duembgen <duembgen@stat.unibe.ch>
 Maintainer: Kaspar Rufibach <kaspar.rufibach@gmail.com>
 Depends: R (>= 2.10)
@@ -12,6 +12,6 @@ License: GPL (>= 2)
 URL: http://www.kasparrufibach.ch ,
         https://www.imsv.unibe.ch/about_us/staff/prof_dr_duembgen_lutz/index_eng.html
 NeedsCompilation: no
-Packaged: 2021-10-12 15:33:05 UTC; rufiback
+Packaged: 2023-01-06 13:46:07 UTC; rufiback
 Repository: CRAN
-Date/Publication: 2021-10-12 16:00:02 UTC
+Date/Publication: 2023-01-06 18:50:48 UTC

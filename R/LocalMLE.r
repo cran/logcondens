@@ -8,7 +8,7 @@ LocalMLE <- function(x, w, IsKnot, phi_o, prec){
     res2 <- MLE(x2, w2, phi_o[K])
     phi <- res2$phi
     L <- res2$L
-    phi <- LocalExtend(x, IsKnot, x2, phi)
+    phi <- LocalExtend(x = x, IsKnot = IsKnot, x2 = x2, phi2 = phi)
     conv <- as.vector(LocalConvexity(x, phi)) * IsKnot
     Fhat <- LocalF(x, phi)
     H <- 1:n * 0

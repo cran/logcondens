@@ -15,8 +15,8 @@ To compute a log-concave density, CDF, and survival function from interval- or r
 \tabular{ll}{
 Package: \tab logcondens\cr
 Type: \tab Package\cr
-Version: \tab 2.1.6 \cr
-Date: \tab 2021-10-10 \cr
+Version: \tab 2.1.7 \cr
+Date: \tab 2023-01-06 \cr
 License: \tab GPL (>=2) \cr
 }
 
@@ -133,7 +133,10 @@ par(mfrow = c(2, 2), mar = c(3, 2, 1, 2))
 plot(res, which = "density")
 plot(res, which = "log-density")
 plot(res, which = "CDF")
-plot(res$x, res$H, type = 'l'); rug(res$x)
+xli <- range(res$x) + 0.1 * c(-1, 1) * diff(range(res$x))
+plot(res$x, res$H, type = 'l', xlim = xli, yli = c(min(res$H) * 1.1, 0))
+segments(res$knots, 0, res$knots, min(res$H) * 1.1, lty = 2)
+rug(res$x); abline(h = 0, lty = 2)
 
 ## compute function values at an arbitrary point
 x0 <- (res$x[50] + res$x[51]) / 2

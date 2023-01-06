@@ -28,7 +28,7 @@ activeSetLogCon <- function(x, xgrid = NULL, print = FALSE, w = NA){
     phi <- LocalNormalize(x, 1:n * 0)
     IsKnot <- 1:n * 0
     IsKnot[c(1, n)] <- 1
-    res1 <- LocalMLE(x, w, IsKnot, phi, prec)
+    res1 <- LocalMLE(x = x, w = w, IsKnot = IsKnot, phi_o = phi, prec = prec)
     phi <- res1$phi
     L <- res1$L
     conv <- res1$conv

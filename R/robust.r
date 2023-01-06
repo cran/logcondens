@@ -13,7 +13,7 @@ robust <- function(x, w, eta, etanew, grad){
         dirder <- dirder/2
     }
     
-    t0 <- (2 - 2 * (liknew - loglik)/dirder)^(-1)
+    t0 <- as.numeric((2 - 2 * (liknew - loglik) / dirder) ^ (-1))
     
     if (t0 < 1){eta <- (1 - t0) * eta + t0 * etanew} else {eta <- etanew}
     
